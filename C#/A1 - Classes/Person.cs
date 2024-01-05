@@ -1,4 +1,4 @@
-abstract class Person
+public abstract class Person
 {
     private string FirstName;
     private string LastName;

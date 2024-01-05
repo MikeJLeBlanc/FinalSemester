@@ -1,4 +1,4 @@
-abstract class Employee : Person
+public abstract class Employee : Person
 {
     private double Salary;
     
