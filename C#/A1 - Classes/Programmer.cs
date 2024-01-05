@@ -2,7 +2,7 @@ public class Programmer : Employee
 {
     private string MainLanguage;
     private string SecondLanguage;
-
+    
     public Programmer(string firstName, string lastName, string address, double salary, int performanceRating, string mainLanguage, string secondLanguage) 
     : base(firstName, lastName, address, salary, performanceRating)
     {
