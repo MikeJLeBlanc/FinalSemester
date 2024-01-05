@@ -3,16 +3,12 @@ abstract class Person
     private string FirstName;
     private string LastName;
     private string Address;
-    private int Salary;
-    private int PerformanceRating;
 
-    public Person(string firstName, string lastName, string address, int salary, int performanceRating)
+    public Person(string firstName, string lastName, string address)
     {
         FirstName = firstName;
         LastName = lastName;
         Address = address;
-        Salary = salary;
-        PerformanceRating = performanceRating;
     }
 
     public string GetFirstName()
@@ -30,16 +26,6 @@ abstract class Person
         return Address;
     }
 
-    public int GetSalary()
-    {
-        return Salary;
-    }
-
-    public int GetPerformanceRating()
-    {
-        return PerformanceRating;
-    }
-
     public void SetFirstName(string firstName)
     {
         FirstName = firstName;
@@ -54,20 +40,6 @@ abstract class Person
     {
         Address = address;
     }
-
-    public void SetSalary(int salary)
-    {
-        Salary = salary;
-    }
-
-    public void SetPerformanceRating(int performanceRating)
-    {
-        PerformanceRating = performanceRating;
-    }
-
-    public abstract int CalculatePayCheck();
-
-    public abstract int CalculatePayRaise();
 
     public override string ToString()
     {
