@@ -27,8 +27,7 @@ public class Main
     {
         foreach (Employee employee in employees)
         {
-            employee.CalculatePayCheque();
-            Console.WriteLine(employee);
+            Console.WriteLine(employee.GetFirstName() + "'s pay cheque is $" + employee.CalculatePayCheque() + ".");
         }
     }
 
