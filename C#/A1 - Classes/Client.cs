@@ -7,29 +7,10 @@ public class Client : Person
         CompanyName = companyName;
     }
 
-    public string GetName()
-    {
-        return Name;
-    }
-
-    public string GetAddress()
-    {
-        return Address;
-    }
-
+   
     public string GetCompanyName()
     {
         return CompanyName;
-    }
-
-    public void SetName(string name)
-    {
-        Name = name;
-    }
-
-    public void SetAddress(string address)
-    {
-        Address = address;
     }
 
     public void SetCompanyName(string companyName)
