@@ -2,8 +2,7 @@ public class Manager : Employee
 {
     private string Department;
 
-    public Manager(string firstName, string lastName, string address, double salary, int performanceRating, string department) 
-    : base(firstName, lastName, address, salary, performanceRating)
+    public Manager(string firstName, string lastName, string address, double salary, int performanceRating, string department) : base(firstName, lastName, address, salary, performanceRating)
     {
         Department = department;
     }
@@ -20,6 +19,6 @@ public class Manager : Employee
 
     public override string ToString()
     {
-        return $"First Name: {GetFirstName()}\nLast Name: {GetLastName()}\nAddress: {GetAddress()}\nSalary: {GetSalary()}\nPerformance Rating: {GetPerformanceRating()}\nDepartment: {Department}\nEmployees: {Employees}";
+        return $"First Name: {GetFirstName()}\nLast Name: {GetLastName()}\nAddress: {GetAddress()}\nSalary: {GetSalary()}\nPerformance Rating: {GetPerformanceRating()}\nDepartment: {Department}";
     }
 }

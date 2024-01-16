@@ -2,7 +2,7 @@ public class Client : Person
 {
     private string CompanyName;
 
-    public Client(string firstName, string lastName, string address, string address, string companyName) : base(firstName, lastName, address)
+    public Client(string firstName, string lastName, string address, string companyName) : base(firstName, lastName, address)
     {
         CompanyName = companyName;
     }
@@ -20,6 +20,6 @@ public class Client : Person
 
     public override string ToString()
     {
-        return $"Name: {Name}\nAddress: {Address}\nCompany Name: {CompanyName}";
+        return $"First Name: {GetFirstName()}\nLast Name: {GetLastName()}\nAddress: {GetAddress()}\nCompany Name: {CompanyName}";
     }
 }
