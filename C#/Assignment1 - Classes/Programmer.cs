@@ -6,6 +6,7 @@ public class Programmer : Employee
     public Programmer(string firstName, string lastName, string address, double salary, int performanceRating, string mainLanguage, string secondLanguage) 
     : base(firstName, lastName, address, salary, performanceRating)
     {
+        // Just something to make these guys different than an employee
         MainLanguage = mainLanguage;
         SecondLanguage = secondLanguage;
     }

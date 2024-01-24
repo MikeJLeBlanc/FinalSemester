@@ -43,6 +43,6 @@ public abstract class Person
 
     public override string ToString()
     {
-        return $"First Name: {FirstName}\nLast Name: {LastName}\nAddress: {Address}\nSalary: {Salary}\nPerformance Rating: {PerformanceRating}";
+        return $"First Name: {FirstName}\nLast Name: {LastName}\nAddress: {Address}";
     }
 }

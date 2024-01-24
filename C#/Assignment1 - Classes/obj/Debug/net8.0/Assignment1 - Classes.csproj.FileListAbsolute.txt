@@ -1,0 +1,15 @@
+E:\school-work\Year2\Semester2\C#\Assignment1 - Classes\obj\Debug\net8.0\Assignment1 - Classes.GeneratedMSBuildEditorConfig.editorconfig
+E:\school-work\Year2\Semester2\C#\Assignment1 - Classes\obj\Debug\net8.0\Assignment1 - Classes.AssemblyInfoInputs.cache
+E:\school-work\Year2\Semester2\C#\Assignment1 - Classes\obj\Debug\net8.0\Assignment1 - Classes.AssemblyInfo.cs
+E:\school-work\Year2\Semester2\C#\Assignment1 - Classes\obj\Debug\net8.0\Assignment1 - Classes.csproj.CoreCompileInputs.cache
+E:\school-work\Year2\Semester2\C#\Assignment1 - Classes\obj\Debug\net8.0\Assignment1 - Classes.sourcelink.json
+E:\school-work\Year2\Semester2\C#\Assignment1 - Classes\bin\Debug\net8.0\Assignment1 - Classes.exe
+E:\school-work\Year2\Semester2\C#\Assignment1 - Classes\bin\Debug\net8.0\Assignment1 - Classes.deps.json
+E:\school-work\Year2\Semester2\C#\Assignment1 - Classes\bin\Debug\net8.0\Assignment1 - Classes.runtimeconfig.json
+E:\school-work\Year2\Semester2\C#\Assignment1 - Classes\bin\Debug\net8.0\Assignment1 - Classes.dll
+E:\school-work\Year2\Semester2\C#\Assignment1 - Classes\bin\Debug\net8.0\Assignment1 - Classes.pdb
+E:\school-work\Year2\Semester2\C#\Assignment1 - Classes\obj\Debug\net8.0\Assignment1 - Classes.dll
+E:\school-work\Year2\Semester2\C#\Assignment1 - Classes\obj\Debug\net8.0\refint\Assignment1 - Classes.dll
+E:\school-work\Year2\Semester2\C#\Assignment1 - Classes\obj\Debug\net8.0\Assignment1 - Classes.pdb
+E:\school-work\Year2\Semester2\C#\Assignment1 - Classes\obj\Debug\net8.0\Assignment1 - Classes.genruntimeconfig.cache
+E:\school-work\Year2\Semester2\C#\Assignment1 - Classes\obj\Debug\net8.0\ref\Assignment1 - Classes.dll

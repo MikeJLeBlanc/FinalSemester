@@ -6,7 +6,7 @@ public abstract class Employee : Person
     private int PerformanceRating;
 
     // Constructor chaining will allow us to create a Person object and an Employee object at the same time. 
-    public Employee(string firstName, string lastName, string address, double salary, int performanceRating) : base(firstName, lastName, address)
+    protected Employee(string firstName, string lastName, string address, double salary, int performanceRating) : base(firstName, lastName, address)
     {
         Salary = salary;
         PerformanceRating = performanceRating;
