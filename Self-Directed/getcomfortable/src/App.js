@@ -17,23 +17,12 @@ function App() {
         fetchData();
     }, []);
 
-      return (
-        <div className="container">
-          <div className="jumbotron">
-            <h1 className="display-4">Posts from our API call</h1>
-          </div>
-          {data?.map((post) => (
-            <div className="card" key={post.id}>
-              <div className="card-header">
-                ID #{post.id} {post.title}
-              </div>
-              <div className="card-body">
-                <img src={post.thumbnailUrl}></img>
-              </div>
-            </div>
-          ))}
-        </div>
-      );
-          }
+    return (
+      <div>
+        <h1>API Data</h1>
+        <pre>{JSON.stringify(data, null, 2)}</pre>
+      </div>
+    );
+}
 
 export default App;
