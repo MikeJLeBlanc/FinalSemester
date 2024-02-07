@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment2-XAMLButtons\\Assignment2-XAMLButtons\\Assignment2-XAMLButtons.csproj",
+      "projectUniqueName": "E:\\school-work\\Year2\\Assignment2-XAMLButtons\\Assignment2-XAMLButtons\\Assignment2-XAMLButtons.csproj",
       "projectName": "Assignment2-XAMLButtons",
-      "projectPath": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment2-XAMLButtons\\Assignment2-XAMLButtons\\Assignment2-XAMLButtons.csproj",
+      "projectPath": "E:\\school-work\\Year2\\Assignment2-XAMLButtons\\Assignment2-XAMLButtons\\Assignment2-XAMLButtons.csproj",
       "packagesPath": "C:\\Users\\Mike\\.nuget\\packages\\",
-      "outputPath": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment2-XAMLButtons\\Assignment2-XAMLButtons\\obj\\",
+      "outputPath": "E:\\school-work\\Year2\\Assignment2-XAMLButtons\\Assignment2-XAMLButtons\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mike\\AppData\\Roaming\\NuGet\\NuGet.Config",
