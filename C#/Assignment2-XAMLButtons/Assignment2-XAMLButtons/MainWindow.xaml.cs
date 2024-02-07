@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.ObjectModel;
+using System.Collections.Generic;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -10,15 +12,19 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Xml.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Xml.Serialization;
 
 namespace Assignment2_XAMLButtons
 {
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
         // initiation of needed variables.
+        // not so needed anymore
         private int hairIndex, eyesIndex, mouthIndex, noseIndex;
 
         private List<BitmapImage> hairList = new List<BitmapImage>();
@@ -29,6 +35,11 @@ namespace Assignment2_XAMLButtons
         //used for targeted removal of elements in the Grid.
         private List<UIElement> itemsToRemove = new List<UIElement>();
 
+        public Faces hair;
+        public Faces eyes;
+        public Faces nose;
+        public Faces mouth;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -36,7 +47,7 @@ namespace Assignment2_XAMLButtons
             /// <summary
             /// add images to images lists
             /// </summary>
-            
+
             hairList.Add(new BitmapImage(new Uri("Images/hair1.png", UriKind.Relative)));
             hairList.Add(new BitmapImage(new Uri("Images/hair2.png", UriKind.Relative)));
             hairList.Add(new BitmapImage(new Uri("Images/hair3.png", UriKind.Relative)));
@@ -52,13 +63,208 @@ namespace Assignment2_XAMLButtons
             mouthList.Add(new BitmapImage(new Uri("Images/mouth1.png", UriKind.Relative)));
             mouthList.Add(new BitmapImage(new Uri("Images/mouth2.png", UriKind.Relative)));
             mouthList.Add(new BitmapImage(new Uri("Images/mouth3.png", UriKind.Relative)));
+
+            EyeComboBox.ItemsSource = LoadComboBoxData();
+
+            hair = new Faces(hairList, MainGrid, "hair");
+            eyes = new Faces(eyeList, MainGrid, "eyes");
+            nose = new Faces(noseList, MainGrid, "nose");
+            mouth = new Faces(mouthList, MainGrid, "mouth");
+
+            CommandHandler cmdNewHair = new CommandHandler(hair.NextImage, true);
+            CommandHandler cmdNewNose = new CommandHandler(nose.NextImage, true);
+            CommandHandler cmdNewMouth = new CommandHandler(mouth.NextImage, true);
+            CommandHandler cmdNewEye = new CommandHandler(eyes.NextImage, true);
+
+            CommandHandler cmdRandomFace = new CommandHandler(RandomFace, true);
+
+            DataContext = new
+            {
+                newHair = cmdNewHair,
+                newEye = cmdNewEye,
+                newNose = cmdNewNose,
+                newMouth = cmdNewMouth,
+                randomFace = cmdRandomFace
+            };
+
+            // keybindings.
+            InputBindings.Add(new KeyBinding(cmdNewHair, new KeyGesture(Key.D1, ModifierKeys.Control)));
+            InputBindings.Add(new KeyBinding(cmdNewEye, new KeyGesture(Key.D2, ModifierKeys.Control)));
+            InputBindings.Add(new KeyBinding(cmdNewNose, new KeyGesture(Key.D3, ModifierKeys.Control)));
+            InputBindings.Add(new KeyBinding(cmdNewMouth, new KeyGesture(Key.D4, ModifierKeys.Control)));
+
+            InputBindings.Add(new KeyBinding(cmdRandomFace, new KeyGesture(Key.R, ModifierKeys.Control)));
         }
+        // call from keybinding and menu option
+        public void RandomFace()
+        {
+            hair.RandomFace();
+            eyes.RandomFace();
+            nose.RandomFace();
+            mouth.RandomFace();
+        }
+        public void MenuHairSelection(object sender, RoutedEventArgs e)
+        {
+            hair.NextImage();
+
+        }
+
+        public void MenuEyeSelection(object sender, RoutedEventArgs e)
+        {
+            eyes.NextImage();
+        }
+
+        public void MenuNoseSelection(object sender, RoutedEventArgs e)
+        {
+            nose.NextImage();
+        }
+
+        public void MenuMouthSelection(object sender, RoutedEventArgs e)
+        {
+            mouth.NextImage();
+        }
+
+        // from here down seems to be all old code.
 
         // indexs to help control the clicks through the different list items in each list.
         public int HairIndex { get; set; }
         public int EyesIndex { get; set; }
         public int NoseIndex { get; set; }
         public int MouthIndex { get; set; }
+
+        // this is where we'd call all the data from the database if we had one to pull from
+        private string[] LoadComboBoxData()
+        {
+            string[] strArray = {
+            "Gray",
+            "Brown",
+            "Blue"
+            };
+            
+            return strArray;
+        }
+
+        private void RandomFace_Click(object sender, RoutedEventArgs e)
+        {
+
+            hair.RandomFace();
+            eyes.RandomFace();
+            nose.RandomFace();
+            mouth.RandomFace();
+            /*
+            Random random = new Random();
+
+            // Potential bug fix, these were all set to hairlist. What if the other lists were longer or shorter than the hair list? OOB exception!
+            HairIndex = random.Next(hairList.Count - 1);
+            EyesIndex = random.Next(eyeList.Count - 1);
+            NoseIndex = random.Next(noseList.Count - 1);
+            MouthIndex = random.Next(mouthList.Count - 1);
+
+            Image hairImg = new Image();
+            Image eyeImg = new Image();
+            Image noseImg = new Image();
+            Image mouthImg = new Image();
+
+            AddImage("hair", HairIndex, hairList);
+            AddImage("eyes", EyesIndex, eyeList);
+            AddImage("nose", NoseIndex, noseList);
+            AddImage("mouth", MouthIndex, mouthList);
+            */
+
+        }
+
+        // element = hair, eyes, nose, or mouth
+        private void AddImage(String element, int index, List<BitmapImage> list)
+        {
+            Image img = new Image();
+            img.Source = list[index];
+            img.Uid = element;
+            img.Height = 434; // could really set these 2 as constants if we wanted.
+            img.Width = 441;
+
+            RemoveElement(element);
+
+            MainGrid.Children.Add(img);
+        }
+
+        private void Help_Click (object sender, RoutedEventArgs e)
+        {
+            //System.Windows.Forms.Help.ShowHelp(null, "Project4-HelpDocs.chm");
+
+        }
+
+        // start of code for project 3.
+        private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            Slider slider = sender as Slider;
+            if (slider != null)
+            {
+                AddImage("hair", (int)slider.Value, hairList);
+            }
+        }
+
+        private void Nose_CheckedChanged(object sender, RoutedEventArgs e)
+        {
+            CheckBox checkBox = sender as CheckBox;
+            AddImage("nose", (int)checkBox.MinWidth, noseList);
+        }
+
+        private void EyeComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ComboBox eyeComboBox = sender as ComboBox;
+            if (eyeComboBox != null) 
+            {
+                AddImage("eyes", eyeComboBox.SelectedIndex, eyeList);
+            }
+        }
+
+        private void RB_Checked(object sender, RoutedEventArgs e)
+        {
+            RadioButton rb = sender as RadioButton;
+            AddImage("mouth", (int)rb.MinWidth, mouthList);
+        }
+
+        private void NextImg(List<BitmapImage> currlist, int index, String element)
+        {
+            /// take the current list and move to the next image, append UID element for clean erasing
+                        
+            Image img = new Image();
+
+            img.Source = currlist[index];
+            img.Width = 441;
+            img.Height = 434;
+            
+            MainGrid.Children.Add(img);
+        }
+
+        private void PrevImg(List<BitmapImage> currlist, int index, String element)
+        {
+            Image img = new Image();
+
+            img.Source = currlist[index];
+            img.Uid = element;
+            img.Width = 441;
+            img.Height = 434;
+
+            MainGrid.Children.Add(img);
+        }
+
+        private void RemoveElement(String element)
+        {
+
+            // targeted removal by UID. We programmatically set these within the methods.
+            foreach (UIElement ui in MainGrid.Children)
+            {
+                if (ui.Uid.StartsWith(element))
+                {
+                    itemsToRemove.Add(ui);
+                }
+            }
+            foreach (UIElement ui in itemsToRemove)
+            {
+                MainGrid.Children.Remove(ui);
+            }
+        }
 
         private void HairPrev_Click(object sender, RoutedEventArgs e)
         {
@@ -135,7 +341,7 @@ namespace Assignment2_XAMLButtons
 
             PrevImg(noseList, NoseIndex, "nose");
         }
-
+                
         private void NoseNext_Click(object sender, RoutedEventArgs e)
         {
             RemoveElement("nose");
@@ -176,99 +382,6 @@ namespace Assignment2_XAMLButtons
             }
 
             NextImg(mouthList, MouthIndex, "mouth");
-        }
-
-        private void RandomFace_Click(object sender, RoutedEventArgs e)
-        {
-            Random random = new Random();
-
-            HairIndex = random.Next(hairList.Count - 1);
-            EyesIndex = random.Next(hairList.Count - 1);
-            NoseIndex = random.Next(hairList.Count - 1);
-            MouthIndex = random.Next(hairList.Count - 1);
-
-            Image hairImg = new Image();
-            Image eyeImg = new Image();
-            Image noseImg = new Image();
-            Image mouthImg = new Image();
-
-            // Prepare images before plastering on the grid
-
-            hairImg.Source = hairList[HairIndex];
-            hairImg.Uid = "hair";
-            hairImg.Width = 441;
-            hairImg.Height = 434;
-
-            eyeImg.Source = eyeList[EyesIndex];
-            eyeImg.Uid = "eyes";
-            eyeImg.Width = 441;
-            eyeImg.Height = 434;
-
-            noseImg.Source = noseList[NoseIndex];
-            noseImg.Uid = "nose";
-            noseImg.Width = 441;
-            noseImg.Height = 434;
-
-            mouthImg.Source = mouthList[MouthIndex];
-            mouthImg.Uid = "mouth";
-            mouthImg.Width = 441;
-            mouthImg.Height = 434;
-
-            // Remove elements right before setting them back so theres less of a time gap where there is no images.
-            // Should be quick enough to where only a debugger sees an empty space.
-
-            RemoveElement("hair");
-            RemoveElement("eyes");
-            RemoveElement("nose");
-            RemoveElement("mouth");
-
-            MainGrid.Children.Add(hairImg);
-            MainGrid.Children.Add(eyeImg);
-            MainGrid.Children.Add(noseImg);
-            MainGrid.Children.Add(mouthImg);
-        }
-
-        private void NextImg(List<BitmapImage> currlist, int index, String element)
-        {
-            /// take the current list and move to the next image, append UID element for clean erasing
-            
-            Image img = new Image();
-
-            img.Source = currlist[index];
-            img.Uid = element;
-            img.Width = 441;
-            img.Height = 434;
-            
-            MainGrid.Children.Add(img);
-        }
-
-        private void PrevImg(List<BitmapImage> currlist, int index, String element)
-        {
-            Image img = new Image();
-
-            img.Source = currlist[index];
-            img.Uid = element;
-            img.Width = 441;
-            img.Height = 434;
-
-            MainGrid.Children.Add(img);
-        }
-
-        private void RemoveElement(String element)
-        {
-
-            // targeted removal by UID. We programmatically set these within the methods.
-            foreach (UIElement ui in MainGrid.Children)
-            {
-                if (ui.Uid.StartsWith(element))
-                {
-                    itemsToRemove.Add(ui);
-                }
-            }
-            foreach (UIElement ui in itemsToRemove)
-            {
-                MainGrid.Children.Remove(ui);
-            }
         }
     }
 }

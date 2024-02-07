@@ -4,15 +4,26 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 E:\school-work\Year2\Semester2\C#\Assignment2-XAMLButtons\Assignment2-XAMLButtons\obj\Debug\net8.0-windows\
+=======
+E:\school-work\Year2\Assignment2-XAMLButtons\Assignment2-XAMLButtons\obj\Debug\net8.0-windows\
+>>>>>>> project3
 Assignment2_XAMLButtons
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+<<<<<<< HEAD
 E:\school-work\Year2\Semester2\C#\Assignment2-XAMLButtons\Assignment2-XAMLButtons\App.xaml
 11407045341
 
 6909244668
+=======
+E:\school-work\Year2\Assignment2-XAMLButtons\Assignment2-XAMLButtons\App.xaml
+11407045341
+
+8999159143
+>>>>>>> project3
 198-294894759
 MainWindow.xaml;
 

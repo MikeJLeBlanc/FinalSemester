@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Assignment2-XAMLButtons")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23b2d3752a5f2f22849336e260331c7da3026545")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+>>>>>>> project3
 [assembly: System.Reflection.AssemblyProductAttribute("Assignment2-XAMLButtons")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Assignment2-XAMLButtons")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
