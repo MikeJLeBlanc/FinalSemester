@@ -10,10 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f96518cd-c96a-4260-8ec5-1eeae1761ba4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/jspthing/Database/MySQLConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/jspthing/Database/UserDatabase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/jspthing/dao/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/jspthing/model/user.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,13 +60,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "server",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Mike/Downloads/mysql-connector-j-8.3.0/mysql-connector-j-8.3.0/mysql-connector-j-8.3.0.jar",
+    "last_opened_file_path": "E:/school-work/Year2/Semester2/J2EE/JDBCdemo-master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
@@ -191,6 +188,8 @@
       <workItem from="1706706293149" duration="2262000" />
       <workItem from="1706877575457" duration="4219000" />
       <workItem from="1706886749541" duration="1157000" />
+      <workItem from="1707310527602" duration="49000" />
+      <workItem from="1707310713758" duration="17000" />
     </task>
     <servers />
   </component>
