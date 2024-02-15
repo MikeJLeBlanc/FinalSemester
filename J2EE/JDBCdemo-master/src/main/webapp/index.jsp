@@ -2,6 +2,8 @@
 <%@ page import="com.example.jdbcdemo.database.UserDatabase" %>
 <%@ page import="com.example.jdbcdemo.model.User" %>
 <%@ page import="java.util.List" %>
+<%@ page import="java.sql.SQLException" %>
+<%@ page import="java.io.*" %>
 
 <!DOCTYPE html>
 <html>
@@ -14,15 +16,20 @@
 <br/>
 <a href="hello-servlet">Hello Servlet</a>
 
-<%
-    UserDatabase database = new UserDatabase();
+<%--<%--%>
+<%--    UserDatabase database = new UserDatabase();--%>
 
-    List<User> users = database.select();
+<%--    List<User> users = null;--%>
+<%--    try {--%>
+<%--        users = database.select();--%>
+<%--    } catch (SQLException e) {--%>
+<%--        throw new RuntimeException(e);--%>
+<%--    }--%>
 
-    for (User user : users) {
-        
-    }
-%>
+<%--    for (User user : users) {--%>
+<%--        --%>
+<%--    }--%>
+<%--%>--%>
 
 </body>
 </html>

@@ -36,8 +36,6 @@ public class UserDatabase implements UserDAO {
             pStatement.setString(3, user.getUserCity());
 
             rs = pStatement.executeUpdate();
-        } catch(SQLSyntaxErrorException ex) {
-            System.out.println("error: " + ex.getMessage());
         } catch(Exception e) {
             System.out.println("error: " + e.getMessage());
         } finally {
@@ -100,7 +98,7 @@ public class UserDatabase implements UserDAO {
             while (rs.next()){
 
                 users.add(new User(
-                        rs.getInt("userId"),
+                rs.getInt("userId"),
                 rs.getString("userName"),
                 rs.getString("userCity")
                ));

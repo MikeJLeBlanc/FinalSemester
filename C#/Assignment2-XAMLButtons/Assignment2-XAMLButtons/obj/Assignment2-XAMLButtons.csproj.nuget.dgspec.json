@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "E:\\school-work\\Year2\\Assignment2-XAMLButtons\\Assignment2-XAMLButtons\\Assignment2-XAMLButtons.csproj": {}
+    "E:\\school-work\\Year2\\Semester2\\C#\\Assignment2-XAMLButtons\\Assignment2-XAMLButtons\\Assignment2-XAMLButtons.csproj": {}
   },
   "projects": {
-    "E:\\school-work\\Year2\\Assignment2-XAMLButtons\\Assignment2-XAMLButtons\\Assignment2-XAMLButtons.csproj": {
+    "E:\\school-work\\Year2\\Semester2\\C#\\Assignment2-XAMLButtons\\Assignment2-XAMLButtons\\Assignment2-XAMLButtons.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\school-work\\Year2\\Assignment2-XAMLButtons\\Assignment2-XAMLButtons\\Assignment2-XAMLButtons.csproj",
+        "projectUniqueName": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment2-XAMLButtons\\Assignment2-XAMLButtons\\Assignment2-XAMLButtons.csproj",
         "projectName": "Assignment2-XAMLButtons",
-        "projectPath": "E:\\school-work\\Year2\\Assignment2-XAMLButtons\\Assignment2-XAMLButtons\\Assignment2-XAMLButtons.csproj",
+        "projectPath": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment2-XAMLButtons\\Assignment2-XAMLButtons\\Assignment2-XAMLButtons.csproj",
         "packagesPath": "C:\\Users\\Mike\\.nuget\\packages\\",
-        "outputPath": "E:\\school-work\\Year2\\Assignment2-XAMLButtons\\Assignment2-XAMLButtons\\obj\\",
+        "outputPath": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment2-XAMLButtons\\Assignment2-XAMLButtons\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Mike\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Mike\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0-windows"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -58,7 +56,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
