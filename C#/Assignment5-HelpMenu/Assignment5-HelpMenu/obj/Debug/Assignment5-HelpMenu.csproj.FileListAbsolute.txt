@@ -1,0 +1,15 @@
+C:\Users\Mike\RiderProjects\Assignment5-HelpMenu\Assignment5-HelpMenu\obj\Debug\Assignment5-HelpMenu.csproj.AssemblyReference.cache
+C:\Users\Mike\RiderProjects\Assignment5-HelpMenu\Assignment5-HelpMenu\obj\Debug\MainWindow.g.cs
+C:\Users\Mike\RiderProjects\Assignment5-HelpMenu\Assignment5-HelpMenu\obj\Debug\App.g.cs
+C:\Users\Mike\RiderProjects\Assignment5-HelpMenu\Assignment5-HelpMenu\obj\Debug\Assignment5_HelpMenu_MarkupCompile.cache
+C:\Users\Mike\RiderProjects\Assignment5-HelpMenu\Assignment5-HelpMenu\obj\Debug\Assignment5_HelpMenu_MarkupCompile.lref
+C:\Users\Mike\RiderProjects\Assignment5-HelpMenu\Assignment5-HelpMenu\bin\Debug\Assignment5_HelpMenu.exe.config
+C:\Users\Mike\RiderProjects\Assignment5-HelpMenu\Assignment5-HelpMenu\bin\Debug\Assignment5_HelpMenu.exe
+C:\Users\Mike\RiderProjects\Assignment5-HelpMenu\Assignment5-HelpMenu\bin\Debug\Assignment5_HelpMenu.pdb
+C:\Users\Mike\RiderProjects\Assignment5-HelpMenu\Assignment5-HelpMenu\obj\Debug\MainWindow.baml
+C:\Users\Mike\RiderProjects\Assignment5-HelpMenu\Assignment5-HelpMenu\obj\Debug\Assignment5_HelpMenu.g.resources
+C:\Users\Mike\RiderProjects\Assignment5-HelpMenu\Assignment5-HelpMenu\obj\Debug\Assignment5_HelpMenu.Properties.Resources.resources
+C:\Users\Mike\RiderProjects\Assignment5-HelpMenu\Assignment5-HelpMenu\obj\Debug\Assignment5-HelpMenu.csproj.GenerateResource.cache
+C:\Users\Mike\RiderProjects\Assignment5-HelpMenu\Assignment5-HelpMenu\obj\Debug\Assignment5-HelpMenu.csproj.CoreCompileInputs.cache
+C:\Users\Mike\RiderProjects\Assignment5-HelpMenu\Assignment5-HelpMenu\obj\Debug\Assignment5_HelpMenu.exe
+C:\Users\Mike\RiderProjects\Assignment5-HelpMenu\Assignment5-HelpMenu\obj\Debug\Assignment5_HelpMenu.pdb
