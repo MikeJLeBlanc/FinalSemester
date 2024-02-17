@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
+const url = `https://perenual.com/api/species-list?key=sk-g7ki65b7b9c3666f13945`
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [data, setData] = useState([]);
+
+    const fetchData =  async () => {
+        try {
+            const response = await axios.get(url);
+            setData(response.data.data);
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
+    useEffect(() => {
+        fetchData();
+    }, []);
+
+    return (
+        <div>
+            <h1>Species List</h1>
+            <ul>
+                {data && data.map((item, index) => (
+                    <li key={index}>{item.common_name}<img src={item.default_image} alt=''></img></li>
+                ))}
+            </ul>
+        </div>
+    );
 }
 
 export default App;
