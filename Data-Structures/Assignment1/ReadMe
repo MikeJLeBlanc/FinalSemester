@@ -1,0 +1,16 @@
+# Introduction
+This is a creation of basically an Array, just in Python.
+I took it up to completely write this in NeoVim as well.
+
+## Uses
+This data structure has your typical Array functions that you'd noramally see in Java.
+- Append - Enters a new value to the end of the array
+- Prepend - Enters a new value to the start of the array
+- Head - shows the first value in the array
+- Tail - shows the last value of the array
+- Pop - returns the last value of the array and removes it
+- Find - returns the index and value of which you seek, returns "none" if not found
+- Contains - returns true if found or false if failed to find
+- Size - returns the size of the array
+- Index - returns the value at the given index
+- Print - prints every value in the array
