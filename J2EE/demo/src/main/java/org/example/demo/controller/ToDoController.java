@@ -52,7 +52,7 @@ public class ToDoController extends HttpServlet {
     }
 
     protected void updateTodo(HttpServletRequest req, HttpServletResponse res) throws IOException, SQLException, ClassNotFoundException {
-        int id = Integer.parseInt(req.getParameter("id"));
+        int id = Integer.parseInt((String) req.getSession().getAttribute("id"));
         String title = req.getParameter("title");
         String username = (String) req.getSession().getAttribute("username");
         String description = req.getParameter("description");
@@ -75,8 +75,7 @@ public class ToDoController extends HttpServlet {
         doGet(req, res);
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String action = request.getServletPath();
 
         try {

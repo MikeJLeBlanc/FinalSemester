@@ -107,9 +107,9 @@ public class CRUD implements ToDoDAO {
             preparedStatement.setString(3, todo.getDescription());
             preparedStatement.setInt(4, todo.getId());
 
+            System.out.println(preparedStatement);
             isUpdated = preparedStatement.executeUpdate() > 0;
 
-            int x = 0;
         } catch (Exception e) {
             System.out.println("Error in crud update todo: " + e.getMessage());
         }

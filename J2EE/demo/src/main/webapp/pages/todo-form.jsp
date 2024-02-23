@@ -44,8 +44,7 @@
                 </c:if>
                 <c:if test="${todo == null}">
                 <form action="insert" method="post">
-                    </c:if>
-
+                </c:if>
                     <caption>
                         <h2>
                             <c:if test="${todo != null}">
