@@ -37,8 +37,7 @@
               "ToolTip": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment5-HelpMenu\\Assignment5-HelpMenu\\MainWindow.xaml",
               "RelativeToolTip": "Assignment5-HelpMenu\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-02-14T16:01:26.325Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-14T16:01:26.325Z"
             },
             {
               "$type": "Document",
@@ -50,8 +49,7 @@
               "RelativeToolTip": "Assignment5-HelpMenu\\CommandHandler.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-14T15:27:44.037Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-14T15:27:44.037Z"
             },
             {
               "$type": "Document",
@@ -63,8 +61,7 @@
               "RelativeToolTip": "Assignment5-HelpMenu\\Faces.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAgwBcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-14T15:37:26.311Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-14T15:37:26.311Z"
             },
             {
               "$type": "Document",
@@ -74,7 +71,7 @@
               "RelativeDocumentMoniker": "Assignment5-HelpMenu\\MainWindow.xaml.cs",
               "ToolTip": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment5-HelpMenu\\Assignment5-HelpMenu\\MainWindow.xaml.cs",
               "RelativeToolTip": "Assignment5-HelpMenu\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAKQAAAAAAAAAAAAAALMAAABlAAAA",
+              "ViewState": "AQIAAKEAAAAAAAAAAAAAALYAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-14T01:11:53.958Z",
               "EditorCaption": ""
