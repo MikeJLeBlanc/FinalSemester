@@ -86,6 +86,7 @@ namespace Assignment5_HelpMenu
         }
 
         // New! Well, new to this assignment. We again could load these from a database!
+        // Tab 2 code
         private string[] LoadOccupationBoxData()
         {
             string[] strArray = {
@@ -119,6 +120,7 @@ namespace Assignment5_HelpMenu
         }
 
         // call from keybinding and menu option
+        // Tab 3 code
         public void RandomFace()
         {
             hair.RandomFace();
@@ -178,6 +180,7 @@ namespace Assignment5_HelpMenu
         }
 
         // Outputs to file. Space is needed between first and last names if writing on the same line.
+        // tab 4 code
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             string[] lines =
