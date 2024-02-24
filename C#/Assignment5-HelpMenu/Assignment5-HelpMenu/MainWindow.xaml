@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Assignment5_HelpMenu"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" 
+        Height="600" 
+        Width="800">
     <Grid x:Name="MainGrid">
         <Menu x:Name="menu" IsMainMenu="True" Height="20" VerticalAlignment="Top" >
             <MenuItem Header="MainMenu">
@@ -28,59 +30,58 @@
                 <MenuItem Header="Exit" />
             </MenuItem>
         </Menu>
-        <Border BorderBrush="Black" BorderThickness="1" Margin="675,21,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="116" Height="23">
-            <Grid HorizontalAlignment="Right" Width="116" Margin="0,0,0,0">
-                <Button x:Name="HairPrev" Content="Prev" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Click="HairPrev_Click" />
-                <Button x:Name="HairNext" Content="Next" HorizontalAlignment="Left" Margin="84,0,0,0" VerticalAlignment="Top" Click="HairNext_Click" />
-                <Label Content="Hair" HorizontalAlignment="Left" Margin="30,0,0,0" VerticalAlignment="Top"/>
-            </Grid>
-        </Border>
 
-        <Border BorderBrush="Black" BorderThickness="1" Margin="674,49,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="116" Height="23">
-            <Grid HorizontalAlignment="Right" Width="116" Margin="0,0,0,0">
-                <Button x:Name="EyesPrev" Content="Prev" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Click="EyesPrev_Click" />
-                <Button x:Name="EyesNext" Content="Next" HorizontalAlignment="Left" Margin="84,0,0,0" VerticalAlignment="Top" Click="EyesNext_Click" />
-                <Label Content="Eyes" HorizontalAlignment="Left" Margin="30,0,0,0" VerticalAlignment="Top"/>
-            </Grid>
-        </Border>
-
-        <Border BorderBrush="Black" BorderThickness="1" Margin="674,77,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="116" Height="23">
-            <Grid HorizontalAlignment="Right" Width="116" Margin="0,0,0,0">
-                <Button x:Name="NosePrev" Content="Prev" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Click="NosePrev_Click" />
-                <Button x:Name="NoseNext" Content="Next" HorizontalAlignment="Left" Margin="84,0,0,0" VerticalAlignment="Top" Click="NoseNext_Click" />
-                <Label Content="Nose" HorizontalAlignment="Left" Margin="30,0,0,0" VerticalAlignment="Top"/>
-            </Grid>
-        </Border>
-
-        <Border BorderBrush="Black" BorderThickness="1" Margin="675,105,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="116" Height="23">
-            <Grid HorizontalAlignment="Right" Width="116" Margin="0,0,0,0">
-                <Button x:Name="MouthPrev" Content="Prev" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Click="MouthPrev_Click" />
-                <Button x:Name="MouthNext" Content="Next" HorizontalAlignment="Left" Margin="84,0,0,0" VerticalAlignment="Top" Click="MouthNext_Click" />
-                <Label Content="Mouth" HorizontalAlignment="Left" Margin="30,0,0,0" VerticalAlignment="Top"/>
-            </Grid>
-        </Border>
-
-        <Border BorderBrush="Black" BorderThickness="1" Margin="10,161,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="116" Height="238">
-            <StackPanel>
-                <Label Content="Hair:" />
-                <Slider x:Name="HairSlider" ValueChanged="Slider_ValueChanged" Maximum="2"/>
-
-                <Label Content="Eyes:" />
-                <ComboBox x:Name="EyeComboBox" SelectionChanged="EyeComboBox_SelectionChanged" />
-
-                <Label Content="Nose:" />
-                <CheckBox Content="This Nose" Checked="Nose_CheckedChanged" MinWidth="0" />
-                <CheckBox Content="That Nose" Checked="Nose_CheckedChanged" MinWidth="1" />
-                <CheckBox Content="The Other Nose" Checked="Nose_CheckedChanged" MinWidth="2" />
-
-                <Label Content="Mouth:"/>
-                <RadioButton GroupName="mouth" Content="First Mouth" Checked="RB_Checked" MinWidth="0"/>
-                <RadioButton GroupName="mouth" Content="Second Mouth" Checked="RB_Checked" MinWidth="1"/>
-                <RadioButton GroupName="mouth" Content="Third Mouth" Checked="RB_Checked" MinWidth="2"/>
-            </StackPanel>
-        </Border>
-
-        <Button x:Name="RandoFaceBtn" Content="Random Face" HorizontalAlignment="Left" Margin="29,404,0,0" VerticalAlignment="Top" Click="RandomFace_Click" RenderTransformOrigin="0.519,-1.276"/>
-        <Image x:Name="Background" Source="/Images/background.png" Width="441" Height="434" />
+        <TabControl Margin="0,25,0,-25">
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Ellipse Width="10" Height="10" Fill="DarkGray"/>
+                        <TextBlock>Tab 1</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <Grid>
+                    <TextBox Name="fNameTextBox" Margin="155,24,454,512"/>
+                    <Label Content="Enter your first name: " Width="130" Margin="20,20,644,512"/>
+                    <TextBox Name="lNameTextBox" Margin="155,49,454,487"/>
+                    <Label Content="Enter your last name: " Width="130" Margin="20,45,644,482"/>
+                    <TextBox Name="addressTextBox" Margin="155,74,454,462"/>
+                    <Label Content="Enter your address: " Width="130" Margin="31,70,633,457"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Tab 2">
+                <Grid>
+                    <Label Margin="0,0,646,533" Content="Which do you like more?" />
+                    <StackPanel Margin="10,23,698,496">
+                        <RadioButton Content="Dog Lover" Name="DogRadioBtn" GroupName="Lovers" Checked="AnimalLover"/>
+                        <RadioButton Content="Cat Lover" Name="CatRadioBtn" GroupName="Lovers" Checked="AnimalLover"/>
+                    </StackPanel>
+                    <Label Content="What is your Occupation?" Margin="0,52,646,473"/>
+                    <ComboBox x:Name="OccupationComboBox" Margin="10,83,637,446" />
+                    <Label Content="What is a hobby you have?" Margin="0,115,637,410"/>
+                    <ComboBox x:Name="HobbyComboBox" Margin="10,146,637,383" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Tab 3">
+                <Grid x:Name="SecondaryGrid">
+                    <Button x:Name="RandoFaceBtn" Content="Random Face" HorizontalAlignment="Left" Margin="25,112,0,0" VerticalAlignment="Top" Click="RandomFace_Click" RenderTransformOrigin="0.519,-1.276"/>
+                    <Image x:Name="Background" Source="/Images/background.png" Width="441" Height="434" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Tab 4">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="68*"/>
+                        <ColumnDefinition Width="727*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Name="FNameTextBlock" Text="{Binding ElementName=fNameTextBox, Path=Text}" Margin="10,10,0,520" Grid.ColumnSpan="2"/>
+                    <TextBlock Name="LNameTextBlock" Text="{Binding ElementName=lNameTextBox, Path=Text}" Margin="10,40,0,490" Grid.ColumnSpan="2"/>
+                    <TextBlock Name="AddressTextBlock" Text="{Binding ElementName=addressTextBox, Path=Text}" Margin="10,70,0,460" Grid.ColumnSpan="2"/>
+                    <TextBlock Name="AnimalChoiceTextBlock" Margin="10,100,0,430" Grid.ColumnSpan="2"/>
+                    <TextBlock Name="OccupationTextBlock" Text="{Binding ElementName=OccupationComboBox, Path=Text}" Margin="10,130,0,400" Grid.ColumnSpan="2"/>
+                    <TextBlock Name="HobbyTextBlock" Text="{Binding ElementName=HobbyComboBox, Path=Text}" Margin="10,160,0,370" Grid.ColumnSpan="2"/>
+                    <Button Grid.Column="1" Content="Output to file" HorizontalAlignment="Left" Margin="208,278,0,0" VerticalAlignment="Top" Height="78" Width="242" Click="Button_Click"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>

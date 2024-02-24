@@ -1,26 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Mike\\RiderProjects\\Assignment5-HelpMenu\\",
+  "WorkspaceRootPath": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment5-HelpMenu\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{690ABCC5-3BC0-43E4-BC13-0DFB1FC78703}|Assignment5-HelpMenu\\Assignment5-HelpMenu.csproj|C:\\Users\\Mike\\RiderProjects\\Assignment5-HelpMenu\\assignment5-helpmenu\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{690ABCC5-3BC0-43E4-BC13-0DFB1FC78703}|Assignment5-HelpMenu\\Assignment5-HelpMenu.csproj|e:\\school-work\\year2\\semester2\\c#\\assignment5-helpmenu\\assignment5-helpmenu\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{690ABCC5-3BC0-43E4-BC13-0DFB1FC78703}|Assignment5-HelpMenu\\Assignment5-HelpMenu.csproj|solutionrelative:assignment5-helpmenu\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{690ABCC5-3BC0-43E4-BC13-0DFB1FC78703}|Assignment5-HelpMenu\\Assignment5-HelpMenu.csproj|C:\\Users\\Mike\\RiderProjects\\Assignment5-HelpMenu\\assignment5-helpmenu\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
-      "RelativeMoniker": "D:0:0:{690ABCC5-3BC0-43E4-BC13-0DFB1FC78703}|Assignment5-HelpMenu\\Assignment5-HelpMenu.csproj|solutionrelative:assignment5-helpmenu\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
+      "AbsoluteMoniker": "D:0:0:{690ABCC5-3BC0-43E4-BC13-0DFB1FC78703}|Assignment5-HelpMenu\\Assignment5-HelpMenu.csproj|E:\\school-work\\Year2\\Semester2\\C#\\Assignment5-HelpMenu\\assignment5-helpmenu\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{690ABCC5-3BC0-43E4-BC13-0DFB1FC78703}|Assignment5-HelpMenu\\Assignment5-HelpMenu.csproj|solutionrelative:assignment5-helpmenu\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{690ABCC5-3BC0-43E4-BC13-0DFB1FC78703}|Assignment5-HelpMenu\\Assignment5-HelpMenu.csproj|c:\\users\\mike\\riderprojects\\assignment5-helpmenu\\assignment5-helpmenu\\faces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{690ABCC5-3BC0-43E4-BC13-0DFB1FC78703}|Assignment5-HelpMenu\\Assignment5-HelpMenu.csproj|solutionrelative:assignment5-helpmenu\\faces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{690ABCC5-3BC0-43E4-BC13-0DFB1FC78703}|Assignment5-HelpMenu\\Assignment5-HelpMenu.csproj|C:\\Users\\Mike\\RiderProjects\\Assignment5-HelpMenu\\assignment5-helpmenu\\commandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{690ABCC5-3BC0-43E4-BC13-0DFB1FC78703}|Assignment5-HelpMenu\\Assignment5-HelpMenu.csproj|E:\\school-work\\Year2\\Semester2\\C#\\Assignment5-HelpMenu\\assignment5-helpmenu\\commandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{690ABCC5-3BC0-43E4-BC13-0DFB1FC78703}|Assignment5-HelpMenu\\Assignment5-HelpMenu.csproj|solutionrelative:assignment5-helpmenu\\commandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{690ABCC5-3BC0-43E4-BC13-0DFB1FC78703}|Assignment5-HelpMenu\\Assignment5-HelpMenu.csproj|C:\\Users\\Mike\\RiderProjects\\Assignment5-HelpMenu\\assignment5-helpmenu\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{690ABCC5-3BC0-43E4-BC13-0DFB1FC78703}|Assignment5-HelpMenu\\Assignment5-HelpMenu.csproj|solutionrelative:assignment5-helpmenu\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{690ABCC5-3BC0-43E4-BC13-0DFB1FC78703}|Assignment5-HelpMenu\\Assignment5-HelpMenu.csproj|E:\\school-work\\Year2\\Semester2\\C#\\Assignment5-HelpMenu\\assignment5-helpmenu\\faces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{690ABCC5-3BC0-43E4-BC13-0DFB1FC78703}|Assignment5-HelpMenu\\Assignment5-HelpMenu.csproj|solutionrelative:assignment5-helpmenu\\faces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,15 +26,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Mike\\RiderProjects\\Assignment5-HelpMenu\\Assignment5-HelpMenu\\MainWindow.xaml",
+              "DocumentMoniker": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment5-HelpMenu\\Assignment5-HelpMenu\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Assignment5-HelpMenu\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Mike\\RiderProjects\\Assignment5-HelpMenu\\Assignment5-HelpMenu\\MainWindow.xaml",
+              "ToolTip": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment5-HelpMenu\\Assignment5-HelpMenu\\MainWindow.xaml",
               "RelativeToolTip": "Assignment5-HelpMenu\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-02-14T16:01:26.325Z",
@@ -46,11 +42,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "CommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Mike\\RiderProjects\\Assignment5-HelpMenu\\Assignment5-HelpMenu\\CommandHandler.cs",
+              "DocumentMoniker": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment5-HelpMenu\\Assignment5-HelpMenu\\CommandHandler.cs",
               "RelativeDocumentMoniker": "Assignment5-HelpMenu\\CommandHandler.cs",
-              "ToolTip": "C:\\Users\\Mike\\RiderProjects\\Assignment5-HelpMenu\\Assignment5-HelpMenu\\CommandHandler.cs",
+              "ToolTip": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment5-HelpMenu\\Assignment5-HelpMenu\\CommandHandler.cs",
               "RelativeToolTip": "Assignment5-HelpMenu\\CommandHandler.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -59,38 +55,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Faces.cs",
-              "DocumentMoniker": "C:\\Users\\Mike\\RiderProjects\\Assignment5-HelpMenu\\Assignment5-HelpMenu\\Faces.cs",
+              "DocumentMoniker": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment5-HelpMenu\\Assignment5-HelpMenu\\Faces.cs",
               "RelativeDocumentMoniker": "Assignment5-HelpMenu\\Faces.cs",
-              "ToolTip": "C:\\Users\\Mike\\RiderProjects\\Assignment5-HelpMenu\\Assignment5-HelpMenu\\Faces.cs",
+              "ToolTip": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment5-HelpMenu\\Assignment5-HelpMenu\\Faces.cs",
               "RelativeToolTip": "Assignment5-HelpMenu\\Faces.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAwwB4AAAANAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwBcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-14T15:37:26.311Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ClassDiagram1.cd",
-              "DocumentMoniker": "C:\\Users\\Mike\\RiderProjects\\Assignment5-HelpMenu\\Assignment5-HelpMenu\\ClassDiagram1.cd",
-              "RelativeDocumentMoniker": "Assignment5-HelpMenu\\ClassDiagram1.cd",
-              "ToolTip": "C:\\Users\\Mike\\RiderProjects\\Assignment5-HelpMenu\\Assignment5-HelpMenu\\ClassDiagram1.cd",
-              "RelativeToolTip": "Assignment5-HelpMenu\\ClassDiagram1.cd",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
-              "WhenOpened": "2024-02-14T01:30:07.666Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Mike\\RiderProjects\\Assignment5-HelpMenu\\Assignment5-HelpMenu\\MainWindow.xaml.cs",
+              "DocumentMoniker": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment5-HelpMenu\\Assignment5-HelpMenu\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Assignment5-HelpMenu\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Mike\\RiderProjects\\Assignment5-HelpMenu\\Assignment5-HelpMenu\\MainWindow.xaml.cs",
+              "ToolTip": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment5-HelpMenu\\Assignment5-HelpMenu\\MainWindow.xaml.cs",
               "RelativeToolTip": "Assignment5-HelpMenu\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAG0AAAAAAAAAAAA4wIYAAABCAAAA",
+              "ViewState": "AQIAAKQAAAAAAAAAAAAAALMAAABlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-14T01:11:53.958Z",
               "EditorCaption": ""

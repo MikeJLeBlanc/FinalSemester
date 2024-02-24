@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Forms;
@@ -18,10 +19,6 @@ namespace Assignment5_HelpMenu
     /// </summary>
     public partial class MainWindow : Window
     {
-        // initiation of needed variables.
-        // not so needed anymore
-        private int hairIndex, eyesIndex, mouthIndex, noseIndex;
-
         private List<BitmapImage> hairList = new List<BitmapImage>();
         private List<BitmapImage> eyeList = new List<BitmapImage>();
         private List<BitmapImage> noseList = new List<BitmapImage>();
@@ -39,7 +36,8 @@ namespace Assignment5_HelpMenu
         {
             InitializeComponent();
 
-            // Interaction logic for MainWindow.xaml
+            OccupationComboBox.ItemsSource = LoadOccupationBoxData();
+            HobbyComboBox.ItemsSource = LoadHobbyBoxData();
 
             hairList.Add(new BitmapImage(new Uri("/Images/hair1.png", UriKind.Relative)));
             hairList.Add(new BitmapImage(new Uri("/Images/hair2.png", UriKind.Relative)));
@@ -56,13 +54,11 @@ namespace Assignment5_HelpMenu
             mouthList.Add(new BitmapImage(new Uri("/Images/mouth1.png", UriKind.Relative)));
             mouthList.Add(new BitmapImage(new Uri("/Images/mouth2.png", UriKind.Relative)));
             mouthList.Add(new BitmapImage(new Uri("/Images/mouth3.png", UriKind.Relative)));
-
-            EyeComboBox.ItemsSource = LoadComboBoxData();
             
-            hair = new Faces(hairList, MainGrid, "hair");
-            eyes = new Faces(eyeList, MainGrid, "eyes");
-            nose = new Faces(noseList, MainGrid, "nose");
-            mouth = new Faces(mouthList, MainGrid, "mouth");
+            hair = new Faces(hairList, SecondaryGrid, "hair");
+            eyes = new Faces(eyeList, SecondaryGrid, "eyes");
+            nose = new Faces(noseList, SecondaryGrid, "nose");
+            mouth = new Faces(mouthList, SecondaryGrid, "mouth");
 
             CommandHandler cmdNewHair = new CommandHandler(hair.NextImage, true);
             CommandHandler cmdNewNose = new CommandHandler(nose.NextImage, true);
@@ -87,6 +83,39 @@ namespace Assignment5_HelpMenu
             InputBindings.Add(new KeyBinding(cmdNewMouth, new KeyGesture(Key.D4, ModifierKeys.Control)));
 
             InputBindings.Add(new KeyBinding(cmdRandomFace, new KeyGesture(Key.R, ModifierKeys.Control)));
+        }
+
+        // New! Well, new to this assignment. We again could load these from a database!
+        private string[] LoadOccupationBoxData()
+        {
+            string[] strArray = {
+            "Student",
+            "Progammer",
+            "Engineer",
+            "Network Engineer",
+            "Linux Administrator",
+            "AWS Engineer",
+            "Greek God",
+            "Designer"
+            };
+
+            return strArray;
+        }
+
+        private string[] LoadHobbyBoxData()
+        {
+            string[] strArray = {
+            "Gardening",
+            "Hockey",
+            "Soccer",
+            "Football",
+            "Knitting",
+            "Video Games",
+            "Reading",
+            "Shopping"
+            };
+
+            return strArray;
         }
 
         // call from keybinding and menu option
@@ -127,8 +156,6 @@ namespace Assignment5_HelpMenu
         }
 
         // helpNav
-        private HelpNavigator helpNav = new HelpNavigator();
-
         private void Help_Click(object sender, RoutedEventArgs e)
         {
             HelpNavigator helpNav = HelpNavigator.Topic;
@@ -136,233 +163,38 @@ namespace Assignment5_HelpMenu
 
         }
 
-        // from here down seems to be all old code.
-        // we'll keep the code here so that we can see our progression.
-        // This is an update from Assignment2-XAML and Assignment3-controls AND Assignment4-hotkeys and menus
-
-        // indexs to help control the clicks through the different list items in each list.
-        public int HairIndex { get; set; }
-        public int EyesIndex { get; set; }
-        public int NoseIndex { get; set; }
-        public int MouthIndex { get; set; }
-
-        // this is where we'd call all the data from the database if we had one to pull from
-        private string[] LoadComboBoxData()
+        // Checks which of the radio buttons is selected.
+        private void AnimalLover(object sender, RoutedEventArgs e)
         {
-            string[] strArray = {
-            "Gray",
-            "Brown",
-            "Blue"
+            if (DogRadioBtn.IsChecked == true) 
+            { 
+                AnimalChoiceTextBlock.Text = "I am a Dog lover!"; 
+            } 
+            else 
+            { 
+                AnimalChoiceTextBlock.Text = "I am a Cat lover!"; 
+            }
+            
+        }
+
+        // Outputs to file. Space is needed between first and last names if writing on the same line.
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string[] lines =
+            {
+                FNameTextBlock.Text + " " + LNameTextBlock.Text,
+                AddressTextBlock.Text,
+                AnimalChoiceTextBlock.Text,
+                OccupationTextBlock.Text,
+                HobbyTextBlock.Text
             };
-            
-            return strArray;
-        }
-        
-        // element = hair, eyes, nose, or mouth
-        private void AddImage(String element, int index, List<BitmapImage> list)
-        {
-            Image img = new Image();
-            img.Source = list[index];
-            img.Uid = element;
-            img.Height = 434; // could really set these 2 as constants if we wanted.
-            img.Width = 441;
 
-            RemoveElement(element);
+            string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
-            MainGrid.Children.Add(img);
-        }
-        
-        
-
-        // start of code for project 3.
-        private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
-        {
-            Slider slider = sender as Slider;
-            if (slider != null)
+            using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, "Assignment6-TabItems.txt"))) 
             {
-                AddImage("hair", (int)slider.Value, hairList);
+                foreach (string line in lines) { outputFile.WriteLine(line); }
             }
-        }
-
-        private void Nose_CheckedChanged(object sender, RoutedEventArgs e)
-        {
-            CheckBox checkBox = sender as CheckBox;
-            AddImage("nose", (int)checkBox.MinWidth, noseList);
-        }
-
-        private void EyeComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            ComboBox eyeComboBox = sender as ComboBox;
-            if (eyeComboBox != null) 
-            {
-                AddImage("eyes", eyeComboBox.SelectedIndex, eyeList);
-            }
-        }
-
-        private void RB_Checked(object sender, RoutedEventArgs e)
-        {
-            RadioButton rb = sender as RadioButton;
-            AddImage("mouth", (int)rb.MinWidth, mouthList);
-        }
-
-        private void NextImg(List<BitmapImage> currlist, int index, String element)
-        {
-            /// take the current list and move to the next image, append UID element for clean erasing
-                        
-            Image img = new Image();
-
-            img.Source = currlist[index];
-            img.Width = 441;
-            img.Height = 434;
-            
-            MainGrid.Children.Add(img);
-        }
-
-        private void PrevImg(List<BitmapImage> currlist, int index, String element)
-        {
-            Image img = new Image();
-
-            img.Source = currlist[index];
-            img.Uid = element;
-            img.Width = 441;
-            img.Height = 434;
-
-            MainGrid.Children.Add(img);
-        }
-
-        private void RemoveElement(String element)
-        {
-
-            // targeted removal by UID. We programmatically set these within the methods.
-            foreach (UIElement ui in MainGrid.Children)
-            {
-                if (ui.Uid.StartsWith(element))
-                {
-                    itemsToRemove.Add(ui);
-                }
-            }
-            foreach (UIElement ui in itemsToRemove)
-            {
-                MainGrid.Children.Remove(ui);
-            }
-        }
-
-        private void HairPrev_Click(object sender, RoutedEventArgs e)
-        {
-            // these are essentially all the same. remove the targeted previous image, reduce the associated index,
-            // pass that index along to the prevImage method. could use pointers here, would save memory.
-
-            RemoveElement("hair");
-
-            --HairIndex;
-
-            if (HairIndex < 0)
-            {
-                HairIndex = hairList.Count - 1;
-            }
-
-            PrevImg(hairList, HairIndex, "hair");
-        }
-
-        private void HairNext_Click(object sender, RoutedEventArgs e)
-        {
-
-            // again, all the same, except incrementing. if we get to the end of the list, we just reset the counter.
-            // "Reset the clock!" - Pacific Rim
-            RemoveElement("hair");
-
-            ++HairIndex;
-
-            if (HairIndex > hairList.Count - 1)
-            {
-                HairIndex = 0;
-            }
-
-            NextImg(hairList, HairIndex, "hair");
-        }
-
-        private void EyesPrev_Click(object sender, RoutedEventArgs e)
-        {
-            RemoveElement("eyes");
-
-            --EyesIndex;
-
-            if (EyesIndex < 0)
-            {
-                EyesIndex = eyeList.Count - 1;
-            }
-
-            PrevImg(eyeList, EyesIndex, "eyes");
-        }
-
-        private void EyesNext_Click(object sender, RoutedEventArgs e)
-        {
-            RemoveElement("eyes");
-
-            ++EyesIndex;
-
-            if (EyesIndex > eyeList.Count - 1)
-            {
-                EyesIndex = 0;
-            }
-
-            NextImg(eyeList, EyesIndex, "eyes");
-        }
-
-        private void NosePrev_Click(object sender, RoutedEventArgs e)
-        {
-            RemoveElement("nose");
-
-            --NoseIndex;
-
-            if (NoseIndex < 0)
-            {
-                NoseIndex = noseList.Count - 1;
-            }
-
-            PrevImg(noseList, NoseIndex, "nose");
-        }
-                
-        private void NoseNext_Click(object sender, RoutedEventArgs e)
-        {
-            RemoveElement("nose");
-
-            ++NoseIndex;
-
-            if (NoseIndex > noseList.Count - 1)
-            {
-                NoseIndex = 0;
-            }
-
-            NextImg(noseList, NoseIndex, "nose");
-        }
-
-        private void MouthPrev_Click(object sender, RoutedEventArgs e)
-        {
-            RemoveElement("mouth");
-
-            --MouthIndex;
-
-            if (MouthIndex < 0)
-            {
-                MouthIndex = mouthList.Count - 1;
-            }
-
-            PrevImg(mouthList, MouthIndex, "mouth");
-        }
-
-        private void MouthNext_Click(object sender, RoutedEventArgs e)
-        {
-            RemoveElement("mouth");
-
-            ++MouthIndex;
-
-            if (MouthIndex > mouthList.Count - 1)
-            {
-                MouthIndex = 0;
-            }
-
-            NextImg(mouthList, MouthIndex, "mouth");
         }
     }
 }
