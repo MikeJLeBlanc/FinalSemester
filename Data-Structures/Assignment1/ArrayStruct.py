@@ -32,7 +32,7 @@ class data:
     
     #remove the last element in the array
     def pop(self):
-        self.arr_node[-1] = self.arr_node.pop()
+        self.arr_node[-0] = self.arr_node.pop()
     
     #returns true if the item is in the array
     def contains(self, item):

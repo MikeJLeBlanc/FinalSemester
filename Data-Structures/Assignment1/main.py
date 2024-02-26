@@ -24,12 +24,12 @@ if __name__ == '__main__':
     ## print the first number of the array after we prepend a new number
     print("------- Prepend -------")
     array.print()
-    print("-- prepend 100 here ---")
-    array.prepend(100)
+    print("-- prepend 71 here ---")
+    array.prepend(71)
     array.print()
 
     ## Pop the last number and print.
-    print("------ pop --------")
+    print("------ pop (1's gone)--------")
     array.pop()
     array.print()
 
@@ -39,7 +39,7 @@ if __name__ == '__main__':
 
     ## Find returns the index and item contained in the array.
     print("------- Finds -------")
-    print(array.find(1))
+    print(array.find(90))
     print(array.find(100))
     print(array.find(21))
 
@@ -47,4 +47,9 @@ if __name__ == '__main__':
     print("------ Contains --------")
     print(array.contains(90))
     print(array.contains(1000))
+
+    ## Prints the value at the index provided.
+    print("------ Index (34) --------")
+    print(array.index(3))
+
 
