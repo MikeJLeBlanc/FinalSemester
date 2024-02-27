@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment6-MultiThreading\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5096D404-D4C8-419F-BD9A-9C1F9C3658E0}|kin4\\kin4.csproj|e:\\school-work\\year2\\semester2\\c#\\assignment6-multithreading\\kin4\\synched\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5096D404-D4C8-419F-BD9A-9C1F9C3658E0}|kin4\\kin4.csproj|solutionrelative:kin4\\synched\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5096D404-D4C8-419F-BD9A-9C1F9C3658E0}|kin4\\kin4.csproj|e:\\school-work\\year2\\semester2\\c#\\assignment6-multithreading\\kin4\\notsynched\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5096D404-D4C8-419F-BD9A-9C1F9C3658E0}|kin4\\kin4.csproj|solutionrelative:kin4\\notsynched\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5096D404-D4C8-419F-BD9A-9C1F9C3658E0}|kin4\\kin4.csproj|e:\\school-work\\year2\\semester2\\c#\\assignment6-multithreading\\kin4\\notsynched\\mythread.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5096D404-D4C8-419F-BD9A-9C1F9C3658E0}|kin4\\kin4.csproj|solutionrelative:kin4\\notsynched\\mythread.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5096D404-D4C8-419F-BD9A-9C1F9C3658E0}|kin4\\kin4.csproj|e:\\school-work\\year2\\semester2\\c#\\assignment6-multithreading\\kin4\\notsynched\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5096D404-D4C8-419F-BD9A-9C1F9C3658E0}|kin4\\kin4.csproj|solutionrelative:kin4\\notsynched\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5096D404-D4C8-419F-BD9A-9C1F9C3658E0}|kin4\\kin4.csproj|E:\\school-work\\Year2\\Semester2\\C#\\Assignment6-MultiThreading\\kin4\\synched\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5096D404-D4C8-419F-BD9A-9C1F9C3658E0}|kin4\\kin4.csproj|solutionrelative:kin4\\synched\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Data.cs",
+              "DocumentMoniker": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment6-MultiThreading\\kin4\\synched\\Data.cs",
+              "RelativeDocumentMoniker": "kin4\\synched\\Data.cs",
+              "ToolTip": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment6-MultiThreading\\kin4\\synched\\Data.cs",
+              "RelativeToolTip": "kin4\\synched\\Data.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-27T17:56:17.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Data.cs",
+              "DocumentMoniker": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment6-MultiThreading\\kin4\\notsynched\\Data.cs",
+              "RelativeDocumentMoniker": "kin4\\notsynched\\Data.cs",
+              "ToolTip": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment6-MultiThreading\\kin4\\notsynched\\Data.cs",
+              "RelativeToolTip": "kin4\\notsynched\\Data.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-27T17:55:23.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "myThread.cs",
+              "DocumentMoniker": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment6-MultiThreading\\kin4\\notsynched\\myThread.cs",
+              "RelativeDocumentMoniker": "kin4\\notsynched\\myThread.cs",
+              "ToolTip": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment6-MultiThreading\\kin4\\notsynched\\myThread.cs",
+              "RelativeToolTip": "kin4\\notsynched\\myThread.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-27T17:55:20.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Main.cs",
+              "DocumentMoniker": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment6-MultiThreading\\kin4\\synched\\Main.cs",
+              "RelativeDocumentMoniker": "kin4\\synched\\Main.cs",
+              "ToolTip": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment6-MultiThreading\\kin4\\synched\\Main.cs",
+              "RelativeToolTip": "kin4\\synched\\Main.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAWwCMAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-27T15:58:37.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Main.cs",
+              "DocumentMoniker": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment6-MultiThreading\\kin4\\notsynched\\Main.cs",
+              "RelativeDocumentMoniker": "kin4\\notsynched\\Main.cs",
+              "ToolTip": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment6-MultiThreading\\kin4\\notsynched\\Main.cs",
+              "RelativeToolTip": "kin4\\notsynched\\Main.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAA1wB8AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-27T15:58:36.324Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

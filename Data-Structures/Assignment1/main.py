@@ -24,8 +24,8 @@ if __name__ == '__main__':
     ## print the first number of the array after we prepend a new number
     print("------- Prepend -------")
     array.print()
-    print("-- prepend 71 here ---")
-    array.prepend(71)
+    print("-- prepend 1 here ---")
+    array.prepend(1)
     array.print()
 
     ## Pop the last number and print.
@@ -51,5 +51,3 @@ if __name__ == '__main__':
     ## Prints the value at the index provided.
     print("------ Index (34) --------")
     print(array.index(3))
-
-

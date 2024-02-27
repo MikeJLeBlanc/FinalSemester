@@ -44,7 +44,6 @@ class data:
             if value == item:
                 return index, item
             
-
     #print everything in this array.
     def print(self):
         for node in self.arr_node:
