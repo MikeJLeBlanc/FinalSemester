@@ -7,7 +7,7 @@ function APICall () {
       useEffect(() => {
       fetch('https://perenual.com/api/species-list?key=sk-g7ki65b7b9c3666f13945')
       .then(response => response.json())
-      .then(data => setData(data))
+      .then(data => setData(data.data))
       .catch(error => console.log(error));
       }, []);
     }
