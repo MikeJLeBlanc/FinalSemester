@@ -41,6 +41,7 @@ import EditUser from "./components/User/EditUser";
 import User from "./components/User/User";
 import Header from "./components/Common/Header";
 import Home from "./components/Layout/Home";
+
 function App() {
   return (
     <div className="App">
@@ -54,6 +55,7 @@ function App() {
             <Route path="/user/:id" element={<User />} />
             <Route path="/create-user" element={<CreateUser />} />
             <Route path="/show-user" element={<ShowUser />} />
+            
           </Routes>
           
         </div>
