@@ -1,0 +1,15 @@
+E:\school-work\PROG2500-main\M08_Grouping_Unit_Testing\M01_First_WPF_Proj\bin\Debug\M01_First_WPF_Proj.exe.config
+E:\school-work\PROG2500-main\M08_Grouping_Unit_Testing\M01_First_WPF_Proj\bin\Debug\M01_First_WPF_Proj.exe
+E:\school-work\PROG2500-main\M08_Grouping_Unit_Testing\M01_First_WPF_Proj\bin\Debug\M01_First_WPF_Proj.pdb
+E:\school-work\PROG2500-main\M08_Grouping_Unit_Testing\M01_First_WPF_Proj\obj\Debug\M08_Grouping_Proj.csproj.AssemblyReference.cache
+E:\school-work\PROG2500-main\M08_Grouping_Unit_Testing\M01_First_WPF_Proj\obj\Debug\MainWindow.g.cs
+E:\school-work\PROG2500-main\M08_Grouping_Unit_Testing\M01_First_WPF_Proj\obj\Debug\App.g.cs
+E:\school-work\PROG2500-main\M08_Grouping_Unit_Testing\M01_First_WPF_Proj\obj\Debug\M01_First_WPF_Proj_MarkupCompile.cache
+E:\school-work\PROG2500-main\M08_Grouping_Unit_Testing\M01_First_WPF_Proj\obj\Debug\M01_First_WPF_Proj_MarkupCompile.lref
+E:\school-work\PROG2500-main\M08_Grouping_Unit_Testing\M01_First_WPF_Proj\obj\Debug\MainWindow.baml
+E:\school-work\PROG2500-main\M08_Grouping_Unit_Testing\M01_First_WPF_Proj\obj\Debug\M01_First_WPF_Proj.g.resources
+E:\school-work\PROG2500-main\M08_Grouping_Unit_Testing\M01_First_WPF_Proj\obj\Debug\M01_First_WPF_Proj.Properties.Resources.resources
+E:\school-work\PROG2500-main\M08_Grouping_Unit_Testing\M01_First_WPF_Proj\obj\Debug\M08_Grouping_Proj.csproj.GenerateResource.cache
+E:\school-work\PROG2500-main\M08_Grouping_Unit_Testing\M01_First_WPF_Proj\obj\Debug\M08_Grouping_Proj.csproj.CoreCompileInputs.cache
+E:\school-work\PROG2500-main\M08_Grouping_Unit_Testing\M01_First_WPF_Proj\obj\Debug\M01_First_WPF_Proj.exe
+E:\school-work\PROG2500-main\M08_Grouping_Unit_Testing\M01_First_WPF_Proj\obj\Debug\M01_First_WPF_Proj.pdb
