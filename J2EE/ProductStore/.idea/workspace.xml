@@ -5,36 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5625f05-9d81-41fe-b449-c0030e313fdb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/productstore/controller/CartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/productstore/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/productstore/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/productstore/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/productstore/dao/CartDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/productstore/dao/LoginDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/productstore/dao/ProductDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/productstore/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/productstore/modal/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/productstore/modal/LoginBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/productstore/modal/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/productstore/modal/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/productstore/utility/SqlConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/Login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/Products.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/.idea/pocket_plants.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/server/Crud.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/server/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/src/components/Perenual-api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/src/components/navbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/src/setupTests.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +48,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -60,10 +57,10 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2dPljQ3gISWEQBABtg9Vojr8TUH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -77,8 +74,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/school-work/Year2/Semester2/J2EE/demo",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -92,6 +90,11 @@
     ]
   }
 }]]></component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="open E:\school-work\Year 1\Semester 2\OOP\GUI\prog1400-a3-rpg-MikeJLeBlanc" />
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="Tomcat 11" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 11" ALTERNATIVE_JRE_ENABLED="false">
       <deployment>
@@ -131,6 +134,7 @@
       <option name="presentableId" value="Default" />
       <updated>1709917730225</updated>
       <workItem from="1709917731256" duration="4768000" />
+      <workItem from="1710068458417" duration="4304000" />
     </task>
     <servers />
   </component>
