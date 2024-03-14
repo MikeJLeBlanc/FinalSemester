@@ -1,37 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ProductStore:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5625f05-9d81-41fe-b449-c0030e313fdb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/.idea/pocket_plants.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/server/Crud.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/server/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/src/components/Perenual-api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/src/components/navbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Self-Directed/pocket_plants/frontend/src/setupTests.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/productstore/dao/OrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/productstore/modal/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/productstore/servlet/AddToCartServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/productstore/servlet/CancelOrderServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/productstore/servlet/CheckOutServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/productstore/servlet/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/productstore/servlet/LogoutServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/productstore/servlet/OrderNowServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/productstore/servlet/QuantityIncDecServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/productstore/servlet/RemoveFromCartServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/cart.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/includes/footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/includes/head.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/includes/navbar.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/orders.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-image/bicycle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-image/bread.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-image/computer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-image/corn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-image/playstation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-image/tricycle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-image/xbox.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Documentation-Assignment1.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Design Documentation-Assignment1.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e0b37b7a-0b74-441a-81d7-238c28c0079c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e0b37b7a-0b74-441a-81d7-238c28c0079c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/productstore/controller/CartController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/productstore/controller/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/productstore/controller/ProductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/productstore/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/productstore/dao/CartDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/productstore/dao/LoginDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/productstore/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/productstore/dao/ProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/productstore/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/productstore/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/productstore/modal/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/productstore/modal/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/productstore/modal/LoginBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/productstore/modal/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/productstore/modal/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/productstore/modal/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/productstore/modal/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/Login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/Products.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +70,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -71,17 +99,20 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven.ProductStore [install].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Tomcat Server.Tomcat 11.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/school-work/Year2/Semester2/J2EE/demo",
+    "last_opened_file_path": "E:/school-work/Year2/Semester2/J2EE/ProductStore/src/main/webapp/product-image",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -90,6 +121,18 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\school-work\Year2\Semester2\J2EE\ProductStore\src\main\webapp\product-image" />
+      <recent name="E:\school-work\Year2\Semester2\J2EE\ProductStore\src\main\webapp" />
+      <recent name="E:\school-work\Year2\Semester2\J2EE\ProductStore\src\main\java\org\example\productstore\servlet" />
+      <recent name="E:\school-work\Year2\Semester2\J2EE\ProductStore\src\main\java\org\example\productstore\dao" />
+      <recent name="E:\school-work\Year2\Semester2\J2EE\ProductStore\src\main\java\org\example\productstore\modal" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\school-work\Year2\Semester2\J2EE\ProductStore\src\main\webapp" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="open E:\school-work\Year 1\Semester 2\OOP\GUI\prog1400-a3-rpg-MikeJLeBlanc" />
@@ -104,12 +147,29 @@
           </settings>
         </artifact>
       </deployment>
-      <server-settings />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="c1c45698-87a0-489e-a4e7-18f4ef7929a8" />
+      </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
       <predefined_log_file id="Tomcat Manager" />
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
@@ -134,11 +194,30 @@
       <option name="presentableId" value="Default" />
       <updated>1709917730225</updated>
       <workItem from="1709917731256" duration="4768000" />
-      <workItem from="1710068458417" duration="4304000" />
+      <workItem from="1710068458417" duration="4903000" />
+      <workItem from="1710160107920" duration="15515000" />
+      <workItem from="1710239575451" duration="9273000" />
+      <workItem from="1710324676572" duration="22152000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
   </component>
 </project>

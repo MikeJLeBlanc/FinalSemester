@@ -1,32 +1,33 @@
 package org.example.productstore.dao;
 
 import org.example.productstore.modal.User;
-import org.example.productstore.utility.SqlConnection;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class UserDao {
-    public int registerUser(User user) throws SQLException, ClassNotFoundException {
-        String INSERT = "INSERT INTO users (fname, lname, username, password) VALUES (?, ?, ?, ?)";
+	private final Connection conn;
 
-        int result = 0;
-
-        Connection connection = SqlConnection.getConnection();
-
-        try (connection; PreparedStatement preparedStatement = connection.prepareStatement(INSERT)) {
-
-            preparedStatement.setString(1, user.getfName());
-            preparedStatement.setString(2, user.getlName());
-            preparedStatement.setString(3, user.getEmail());
-            preparedStatement.setString(4, user.getPassword());
-
-            result = preparedStatement.executeUpdate();
-        } catch (Exception e) {
-            System.out.println("error: " + e.getMessage());
+    public UserDao(Connection con) {
+		this.conn = con;
+	}
+	
+	public User userLogin(String email, String password) {
+		User user = null;
+        try {
+            String query = "select * from users where email=? and pass=?";
+            PreparedStatement pst = this.conn.prepareStatement(query);
+            pst.setString(1, email);
+            pst.setString(2, password);
+            ResultSet rs = pst.executeQuery();
+            if(rs.next()){
+            	user = new User();
+            	user.setId(rs.getInt("id"));
+            	user.setName(rs.getString("name"));
+            	user.setEmail(rs.getString("email"));
+            }
+        } catch (SQLException e) {
+            System.out.print(e.getMessage());
         }
-
-        return result;
+        return user;
     }
 }
