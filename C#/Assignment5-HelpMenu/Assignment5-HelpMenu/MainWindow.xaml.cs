@@ -1,14 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Diagnostics;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Documents;
 using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media.Imaging;
 using CheckBox = System.Windows.Controls.CheckBox;
 using ComboBox = System.Windows.Controls.ComboBox;
+using MessageBox = System.Windows.MessageBox;
 using RadioButton = System.Windows.Controls.RadioButton;
 
 
@@ -26,11 +30,14 @@ namespace Assignment5_HelpMenu
 
         // used for targeted removal of elements in the Grid.
         private List<UIElement> itemsToRemove = new List<UIElement>();
+        private DatabaseAccess dbAccess;
+        private int dbIndex = 0;
 
         public Faces hair;
         public Faces eyes;
         public Faces nose;
         public Faces mouth;
+        
 
         public MainWindow()
         {
@@ -83,6 +90,91 @@ namespace Assignment5_HelpMenu
             InputBindings.Add(new KeyBinding(cmdNewMouth, new KeyGesture(Key.D4, ModifierKeys.Control)));
 
             InputBindings.Add(new KeyBinding(cmdRandomFace, new KeyGesture(Key.R, ModifierKeys.Control)));
+
+            dbAccess = new DatabaseAccess();
+
+            ResetGrid();
+        }
+
+        private void ResetGrid()
+        {
+            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=E:\\school-work\\Year2\\Semester2\\C#\\Assignment5-HelpMenu\\Assignment5-HelpMenu\\userData.mdf;Integrated Security=True";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = "select * from Person";
+
+                connection.Open();
+                SqlCommand command = new SqlCommand(sql, connection);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                DataTable table = new DataTable("PersonGrid");
+                adapter.Fill(table);
+                PersonGrid.ItemsSource = table.DefaultView;
+            }
+        }
+
+        // Tab 1 code
+        private void InsertBtn_Click(object sender, RoutedEventArgs e)
+        {
+            string firstName = FNameTextBlock.Text;
+            string lastName = LNameTextBlock.Text;
+            string address = AddressTextBlock.Text;
+
+            if (firstName != "" &&  lastName !="" &&  address != "")
+            {
+                dbAccess.InsertPerson(firstName, lastName, address);
+            }
+            else
+            {
+                MessageBox.Show("Empty field! \nBetter enter some of that there data you got!");
+            }
+            ResetGrid();
+        }
+
+        private void PersonGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            try
+            {
+                dbIndex = (int)(PersonGrid.SelectedItem as DataRowView).Row.ItemArray[0];
+                fNameTextBox.Text = (string)(PersonGrid.SelectedItem as DataRowView).Row.ItemArray[1];
+                lNameTextBox.Text = (string)(PersonGrid.SelectedItem as DataRowView).Row.ItemArray[2];
+                addressTextBox.Text = (string)(PersonGrid.SelectedItem as DataRowView).Row.ItemArray[3];
+            }
+            catch (NullReferenceException)
+            {
+                dbIndex = -1;
+                fNameTextBox.Text = "D:";
+                lNameTextBox.Text = "D:";
+                addressTextBox.Text = "D:";
+            }
+        }
+        private void UpdateBtn_Click(object sender, RoutedEventArgs e)
+        {
+            string firstName = fNameTextBox.Text;
+            string lastName = lNameTextBox.Text;
+            string address = addressTextBox.Text;
+            if (dbIndex >= 0)
+            {
+                dbAccess.UpdatePerson(dbIndex, firstName, lastName, address);
+            }
+            ResetGrid();
+        }
+
+        private void DeleteBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (PersonGrid.SelectedItem != null)
+            {
+                int id = (int)(PersonGrid.SelectedItem as DataRowView).Row.ItemArray[0];
+                dbAccess.DeletePerson(id);
+
+                ResetGrid();
+            }
+        }
+
+        private void CancelBtn_Click(object sender, RoutedEventArgs e)
+        {
+            fNameTextBox.Text = "";
+            lNameTextBox.Text = "";
+            addressTextBox.Text = "";
         }
 
         // New! Well, new to this assignment. We again could load these from a database!

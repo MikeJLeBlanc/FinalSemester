@@ -40,25 +40,30 @@
                     </StackPanel>
                 </TabItem.Header>
                 <Grid>
-                    <TextBox Name="fNameTextBox" Margin="155,24,454,512"/>
-                    <Label Content="Enter your first name: " Width="130" Margin="20,20,644,512"/>
-                    <TextBox Name="lNameTextBox" Margin="155,49,454,487"/>
-                    <Label Content="Enter your last name: " Width="130" Margin="20,45,644,482"/>
-                    <TextBox Name="addressTextBox" Margin="155,74,454,462"/>
-                    <Label Content="Enter your address: " Width="130" Margin="31,70,633,457"/>
+                    <TextBox Name="fNameTextBox" Margin="155,24,0,0" HorizontalAlignment="Left" Width="185" Height="20" VerticalAlignment="Top"/>
+                    <Label Content="Enter your first name: " Width="130" Margin="20,20,0,0" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top"/>
+                    <TextBox Name="lNameTextBox" Margin="155,49,0,0" HorizontalAlignment="Left" Width="185" Height="20" VerticalAlignment="Top"/>
+                    <Label Content="Enter your last name: " Width="130" Margin="20,45,0,0" HorizontalAlignment="Left" Height="29" VerticalAlignment="Top"/>
+                    <TextBox Name="addressTextBox" Margin="155,74,0,0" HorizontalAlignment="Left" Width="185" Height="20" VerticalAlignment="Top"/>
+                    <Label Content="Enter your address: " Width="130" Margin="31,70,0,0" HorizontalAlignment="Left" Height="29" VerticalAlignment="Top"/>
+                    <DataGrid x:Name="PersonGrid" Margin="368,24,26,168" SelectionChanged="PersonGrid_SelectionChanged"/>
+                    <Button x:Name="InsertBtn" Content="Insert Person" HorizontalAlignment="Left" Margin="47,183,0,0" VerticalAlignment="Top" Height="23" Width="103" Click="InsertBtn_Click"/>
+                    <Button x:Name="CancelBtn" Content="Cancel" HorizontalAlignment="Left" Margin="180,424,0,0" VerticalAlignment="Top" Height="23" Width="104" Click="CancelBtn_Click"/>
+                    <Button x:Name="UpdateBtn" Content="Update Person" HorizontalAlignment="Left" Margin="232,183,0,0" VerticalAlignment="Top" Height="23" Width="103" Click="UpdateBtn_Click"/>
+                    <Button x:Name="DeleteBtn" Content="Delete Person" HorizontalAlignment="Left" Margin="516,424,0,0" VerticalAlignment="Top" Height="24" Width="104" Click="DeleteBtn_Click"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Tab 2">
                 <Grid>
-                    <Label Margin="0,0,646,533" Content="Which do you like more?" />
-                    <StackPanel Margin="10,23,698,496">
+                    <Label Content="Which do you like more?" Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Width="148" />
+                    <StackPanel Margin="10,23,0,0" HorizontalAlignment="Left" Width="86" Height="37" VerticalAlignment="Top">
                         <RadioButton Content="Dog Lover" Name="DogRadioBtn" GroupName="Lovers" Checked="AnimalLover"/>
                         <RadioButton Content="Cat Lover" Name="CatRadioBtn" GroupName="Lovers" Checked="AnimalLover"/>
                     </StackPanel>
-                    <Label Content="What is your Occupation?" Margin="0,52,646,473"/>
-                    <ComboBox x:Name="OccupationComboBox" Margin="10,83,637,446" />
-                    <Label Content="What is a hobby you have?" Margin="0,115,637,410"/>
-                    <ComboBox x:Name="HobbyComboBox" Margin="10,146,637,383" />
+                    <Label Content="What is your Occupation?" Margin="0,52,0,0" HorizontalAlignment="Left" Width="148" Height="31" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="OccupationComboBox" Margin="10,83,0,0" HorizontalAlignment="Left" Width="147" Height="27" VerticalAlignment="Top" />
+                    <Label Content="What is a hobby you have?" Margin="0,115,0,0" HorizontalAlignment="Left" Width="157" Height="31" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="HobbyComboBox" Margin="10,146,0,0" HorizontalAlignment="Left" Width="147" Height="27" VerticalAlignment="Top" />
                 </Grid>
             </TabItem>
             <TabItem Header="Tab 3">
@@ -73,12 +78,12 @@
                         <ColumnDefinition Width="68*"/>
                         <ColumnDefinition Width="727*"/>
                     </Grid.ColumnDefinitions>
-                    <TextBlock Name="FNameTextBlock" Text="{Binding ElementName=fNameTextBox, Path=Text}" Margin="10,10,0,520" Grid.ColumnSpan="2"/>
-                    <TextBlock Name="LNameTextBlock" Text="{Binding ElementName=lNameTextBox, Path=Text}" Margin="10,40,0,490" Grid.ColumnSpan="2"/>
-                    <TextBlock Name="AddressTextBlock" Text="{Binding ElementName=addressTextBox, Path=Text}" Margin="10,70,0,460" Grid.ColumnSpan="2"/>
-                    <TextBlock Name="AnimalChoiceTextBlock" Margin="10,100,0,430" Grid.ColumnSpan="2"/>
-                    <TextBlock Name="OccupationTextBlock" Text="{Binding ElementName=OccupationComboBox, Path=Text}" Margin="10,130,0,400" Grid.ColumnSpan="2"/>
-                    <TextBlock Name="HobbyTextBlock" Text="{Binding ElementName=HobbyComboBox, Path=Text}" Margin="10,160,0,370" Grid.ColumnSpan="2"/>
+                    <TextBlock Name="FNameTextBlock" Text="{Binding ElementName=fNameTextBox, Path=Text}" Margin="10,10,0,0" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="784" Height="26" VerticalAlignment="Top"/>
+                    <TextBlock Name="LNameTextBlock" Text="{Binding ElementName=lNameTextBox, Path=Text}" Margin="10,40,0,0" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="784" Height="26" VerticalAlignment="Top"/>
+                    <TextBlock Name="AddressTextBlock" Text="{Binding ElementName=addressTextBox, Path=Text}" Margin="10,70,0,0" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="784" Height="26" VerticalAlignment="Top"/>
+                    <TextBlock Name="AnimalChoiceTextBlock" Margin="10,100,0,0" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="784" Height="26" VerticalAlignment="Top"/>
+                    <TextBlock Name="OccupationTextBlock" Text="{Binding ElementName=OccupationComboBox, Path=Text}" Margin="10,130,0,0" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="784" Height="26" VerticalAlignment="Top"/>
+                    <TextBlock Name="HobbyTextBlock" Text="{Binding ElementName=HobbyComboBox, Path=Text}" Margin="10,160,0,0" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="784" Height="26" VerticalAlignment="Top"/>
                     <Button Grid.Column="1" Content="Output to file" HorizontalAlignment="Left" Margin="208,278,0,0" VerticalAlignment="Top" Height="78" Width="242" Click="Button_Click"/>
                 </Grid>
             </TabItem>

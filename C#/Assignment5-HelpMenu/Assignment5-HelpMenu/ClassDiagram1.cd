@@ -22,7 +22,7 @@
       <Compartment Name="Methods" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>DQEAAoEAQgAEAAECAACIAy4DCIRKAQEIAAAAk0QDAAA=</HashCode>
+      <HashCode>CQAAAgAAUwAAAAFAAAAIAQMCAJQAAAAAAAAMg0RhAAQ=</HashCode>
       <FileName>MainWindow.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -34,6 +34,13 @@
   <Class Name="System.Windows.Window" Collapsed="true">
     <Position X="5.5" Y="1.5" Width="1.5" />
     <TypeIdentifier />
+  </Class>
+  <Class Name="Assignment5_HelpMenu.DatabaseAccess">
+    <Position X="8" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAhAAAAAAAQAAAAAAAAAAAIAAAgAAAA=</HashCode>
+      <FileName>DatabaseAccess.cs</FileName>
+    </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

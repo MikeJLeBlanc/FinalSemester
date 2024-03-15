@@ -28,3 +28,6 @@ E:\school-work\Year2\Semester2\C#\Assignment5-HelpMenu\Assignment5-HelpMenu\obj\
 E:\school-work\Year2\Semester2\C#\Assignment5-HelpMenu\Assignment5-HelpMenu\obj\Debug\Assignment5_HelpMenu.Properties.Resources.resources
 E:\school-work\Year2\Semester2\C#\Assignment5-HelpMenu\Assignment5-HelpMenu\obj\Debug\Assignment5-HelpMenu.csproj.GenerateResource.cache
 E:\school-work\Year2\Semester2\C#\Assignment5-HelpMenu\Assignment5-HelpMenu\obj\Debug\Assignment5-HelpMenu.csproj.CoreCompileInputs.cache
+E:\school-work\Year2\Semester2\C#\Assignment5-HelpMenu\Assignment5-HelpMenu\bin\Debug\userData.mdf
+E:\school-work\Year2\Semester2\C#\Assignment5-HelpMenu\Assignment5-HelpMenu\bin\Debug\userData_log.ldf
+E:\school-work\Year2\Semester2\C#\Assignment5-HelpMenu\Assignment5-HelpMenu\obj\Debug\Assignment5_HelpMenu_Content.g.cs
