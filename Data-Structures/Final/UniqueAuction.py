@@ -18,10 +18,10 @@ class UniqueBidAuction:
         if bidder_id in self.bidder_bids and bid_amount in self.bidder_bids[bidder_id]:
             return "Bidder has already placed this bid"
 
-        heapq.heappush(self.bids, bid_amount)
-        if bidder_id not in self.bidder_bids:
-            self.bidder_bids[bidder_id] = set()
-        self.bidder_bids[bidder_id].add(bid_amount)
+        heapq.heappush(self.bids, bid_amount) # Push the bid to the priority queue
+        if bidder_id not in self.bidder_bids: 
+            self.bidder_bids[bidder_id] = set() 
+        self.bidder_bids[bidder_id].add(bid_amount) # Add the bid to the bidder's bids set
 
         self.process_bids()
 
@@ -35,10 +35,10 @@ class UniqueBidAuction:
                 self.current_min_bid = self.bids[1] + 1
                 self.bids = []
                 for bidder_bids in self.bidder_bids.values():
-                    if self.bids:
-                        bidder_bids.discard(self.bids[0])
-                self.bids = [bid for bid in self.bids if bid >= self.current_min_bid]
-                heapq.heapify(self.bids)
+                    if self.bids: 
+                        bidder_bids.discard(self.bids[0]) 
+                self.bids = [bid for bid in self.bids if bid >= self.current_min_bid] # Remove bids less than current min bid
+                heapq.heapify(self.bids) # Re-heapify the bids
                 print(f"Round {self.rounds} started with minimum bid: {self.current_min_bid}")
             else:
                 print("Maximum rounds reached. No winner.")
@@ -51,6 +51,8 @@ class UniqueBidAuction:
             return f"Winner: Bidder with ID {self.get_bidder_id(self.bids[0])} with a bid of {self.bids[0]}"
         else:
             unique_bids = [bid for bid in self.bids if self.bids.count(bid) == 1]
+            if len(unique_bids) == 0:
+                return "No unique bid found!"
             if len(unique_bids) == 1:
                 return f"Winner: Bidder with ID {self.get_bidder_id(unique_bids[0])} with a bid of {unique_bids[0]}"
             else:
@@ -71,10 +73,10 @@ print(auction.place_bid(1, 10))  # Bid placed successfully
 print(auction.place_bid(2, 20))  # Bid placed successfully
 print(auction.place_bid(3, 15))  # Bid placed successfully
 
-# Place 100 random extra bids for testing
-for i in range(4, 105):
-    bidder_id = random.randint(1, 10)  # Random bidder ID
-    bid_amount = random.randint(5, 25)  # Random bid amount between 5 and 25
+# Place 1000 random extra bids for testing
+for i in range(4, 1005):
+    bidder_id = random.randint(1, 100)  # Random bidder ID
+    bid_amount = random.randint(auction.current_min_bid, auction.current_min_bid + 25)  # Random bid amount between current min bid and 25 over
     print(auction.place_bid(bidder_id, bid_amount))
 
 # Get the winner
