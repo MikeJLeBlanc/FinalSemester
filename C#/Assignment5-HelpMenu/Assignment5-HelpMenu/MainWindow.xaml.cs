@@ -4,6 +4,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Documents;
@@ -37,15 +38,16 @@ namespace Assignment5_HelpMenu
         public Faces eyes;
         public Faces nose;
         public Faces mouth;
-        
+
+        string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=E:\\school-work\\Year2\\Semester2\\C#\\Assignment5-HelpMenu\\Assignment5-HelpMenu\\userData.mdf;Integrated Security=True";
 
         public MainWindow()
         {
             InitializeComponent();
 
-            OccupationComboBox.ItemsSource = LoadOccupationBoxData();
-            HobbyComboBox.ItemsSource = LoadHobbyBoxData();
-
+            LoadComboBox("Occupation", OccupationComboBox);
+            LoadComboBox("Hobbies", HobbyComboBox);
+            
             hairList.Add(new BitmapImage(new Uri("/Images/hair1.png", UriKind.Relative)));
             hairList.Add(new BitmapImage(new Uri("/Images/hair2.png", UriKind.Relative)));
             hairList.Add(new BitmapImage(new Uri("/Images/hair3.png", UriKind.Relative)));
@@ -98,7 +100,6 @@ namespace Assignment5_HelpMenu
 
         private void ResetGrid()
         {
-            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=E:\\school-work\\Year2\\Semester2\\C#\\Assignment5-HelpMenu\\Assignment5-HelpMenu\\userData.mdf;Integrated Security=True";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string sql = "select * from Person";
@@ -177,38 +178,26 @@ namespace Assignment5_HelpMenu
             addressTextBox.Text = "";
         }
 
-        // New! Well, new to this assignment. We again could load these from a database!
         // Tab 2 code
-        private string[] LoadOccupationBoxData()
+        private void LoadComboBox(String DatabaseName, ComboBox ComboBoxName)
         {
-            string[] strArray = {
-            "Student",
-            "Progammer",
-            "Engineer",
-            "Network Engineer",
-            "Linux Administrator",
-            "AWS Engineer",
-            "Greek God",
-            "Designer"
-            };
-
-            return strArray;
-        }
-
-        private string[] LoadHobbyBoxData()
-        {
-            string[] strArray = {
-            "Gardening",
-            "Hockey",
-            "Soccer",
-            "Football",
-            "Knitting",
-            "Video Games",
-            "Reading",
-            "Shopping"
-            };
-
-            return strArray;
+            string sql = "SELECT * FROM " + DatabaseName;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlCommand command = new SqlCommand(sql, connection))
+            {
+                connection.Open();
+                
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read()) 
+                    {
+                        string item = reader.GetString(1);
+                        ComboBoxName.Items.Add(item);
+                        
+                    }
+                }
+                
+            }
         }
 
         // call from keybinding and menu option
