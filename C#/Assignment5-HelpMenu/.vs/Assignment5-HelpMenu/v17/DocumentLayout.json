@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment5-HelpMenu\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{690ABCC5-3BC0-43E4-BC13-0DFB1FC78703}|Assignment5-HelpMenu\\Assignment5-HelpMenu.csproj|E:\\school-work\\Year2\\Semester2\\C#\\Assignment5-HelpMenu\\assignment5-helpmenu\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{690ABCC5-3BC0-43E4-BC13-0DFB1FC78703}|Assignment5-HelpMenu\\Assignment5-HelpMenu.csproj|solutionrelative:assignment5-helpmenu\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{690ABCC5-3BC0-43E4-BC13-0DFB1FC78703}|Assignment5-HelpMenu\\Assignment5-HelpMenu.csproj|E:\\school-work\\Year2\\Semester2\\C#\\Assignment5-HelpMenu\\assignment5-helpmenu\\databaseaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{690ABCC5-3BC0-43E4-BC13-0DFB1FC78703}|Assignment5-HelpMenu\\Assignment5-HelpMenu.csproj|solutionrelative:assignment5-helpmenu\\databaseaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{690ABCC5-3BC0-43E4-BC13-0DFB1FC78703}|Assignment5-HelpMenu\\Assignment5-HelpMenu.csproj|e:\\school-work\\year2\\semester2\\c#\\assignment5-helpmenu\\assignment5-helpmenu\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{690ABCC5-3BC0-43E4-BC13-0DFB1FC78703}|Assignment5-HelpMenu\\Assignment5-HelpMenu.csproj|E:\\school-work\\Year2\\Semester2\\C#\\Assignment5-HelpMenu\\assignment5-helpmenu\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{690ABCC5-3BC0-43E4-BC13-0DFB1FC78703}|Assignment5-HelpMenu\\Assignment5-HelpMenu.csproj|solutionrelative:assignment5-helpmenu\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{690ABCC5-3BC0-43E4-BC13-0DFB1FC78703}|Assignment5-HelpMenu\\Assignment5-HelpMenu.csproj|E:\\school-work\\Year2\\Semester2\\C#\\Assignment5-HelpMenu\\assignment5-helpmenu\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{690ABCC5-3BC0-43E4-BC13-0DFB1FC78703}|Assignment5-HelpMenu\\Assignment5-HelpMenu.csproj|solutionrelative:assignment5-helpmenu\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{690ABCC5-3BC0-43E4-BC13-0DFB1FC78703}|Assignment5-HelpMenu\\Assignment5-HelpMenu.csproj|solutionrelative:assignment5-helpmenu\\faces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{690ABCC5-3BC0-43E4-BC13-0DFB1FC78703}|Assignment5-HelpMenu\\Assignment5-HelpMenu.csproj|E:\\school-work\\Year2\\Semester2\\C#\\Assignment5-HelpMenu\\assignment5-helpmenu\\commandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{690ABCC5-3BC0-43E4-BC13-0DFB1FC78703}|Assignment5-HelpMenu\\Assignment5-HelpMenu.csproj|e:\\school-work\\year2\\semester2\\c#\\assignment5-helpmenu\\assignment5-helpmenu\\commandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{690ABCC5-3BC0-43E4-BC13-0DFB1FC78703}|Assignment5-HelpMenu\\Assignment5-HelpMenu.csproj|solutionrelative:assignment5-helpmenu\\commandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment5-HelpMenu\\Assignment5-HelpMenu\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Assignment5-HelpMenu\\MainWindow.xaml",
@@ -46,13 +46,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "DatabaseAccess.cs",
               "DocumentMoniker": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment5-HelpMenu\\Assignment5-HelpMenu\\DatabaseAccess.cs",
               "RelativeDocumentMoniker": "Assignment5-HelpMenu\\DatabaseAccess.cs",
               "ToolTip": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment5-HelpMenu\\Assignment5-HelpMenu\\DatabaseAccess.cs",
               "RelativeToolTip": "Assignment5-HelpMenu\\DatabaseAccess.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAACkAAABSAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-15T15:18:34.09Z",
               "EditorCaption": ""
@@ -91,7 +91,7 @@
               "RelativeDocumentMoniker": "Assignment5-HelpMenu\\MainWindow.xaml.cs",
               "ToolTip": "E:\\school-work\\Year2\\Semester2\\C#\\Assignment5-HelpMenu\\Assignment5-HelpMenu\\MainWindow.xaml.cs",
               "RelativeToolTip": "Assignment5-HelpMenu\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAKkAAAAAAAAAAAAYwLcAAAA5AAAA",
+              "ViewState": "AQIAAJ4AAAAAAAAAAAAtwMIAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-14T01:11:53.958Z",
               "EditorCaption": ""
