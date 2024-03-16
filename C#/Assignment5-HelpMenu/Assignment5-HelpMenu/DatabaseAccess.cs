@@ -17,86 +17,80 @@ namespace Assignment5_HelpMenu
        
         public void InsertPerson(string firstName, string lastName, string address)
         {
+            string sql = "INSERT INTO Person(firstName, lastName, address)  VALUES ('" + firstName + "', '" + lastName + "', '" + address + "');";
+
             using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlCommand command = new SqlCommand(sql, connection))
             {
-                string sql = "INSERT INTO Person(firstName, lastName, address)  VALUES('" + firstName + "', '" + lastName + "', '" + address + "');";
+                
                 try
                 {
                     connection.Open();
-                    SqlCommand command = new SqlCommand(sql, connection);
-
                     command.ExecuteNonQuery();
                 }   
                 catch (Exception ex) 
                 { 
                 Console.WriteLine(ex.ToString());
                 }
-                finally 
-                {
-                connection.Close();
-                }
             }
         }
 
         public void DeletePerson(int id) 
         {
-            using (SqlConnection connection = new SqlConnection(connectionString)) 
+            string sql = "DELETE FROM Person WHERE Id = " + id + ";";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlCommand command = new SqlCommand(sql, connection))
             {
-                string sql = "DELETE FROM Person WHERE Id = " + id + ";";
                 try
                 {
                     connection.Open();
-                    SqlCommand command = new SqlCommand(sql, connection);
                     command.ExecuteNonQuery();
                 } 
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.ToString());
                 }
-                finally 
-                {
-                    connection.Close(); 
-                }
             }
         }
 
         public void UpdatePerson(int id, string firstName, string lastName, string address) 
         {
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                string sql = "UPDATE Person SET firstName = '" + firstName + 
-                    "', lastName = '" + lastName + 
-                    "', address = '" + address + 
+            string sql = "UPDATE Person SET firstName = '" + firstName +
+                    "', lastName = '" + lastName +
+                    "', address = '" + address +
                     "' where Id = " + id + ";";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlCommand command = new SqlCommand(sql, connection))
+            {
                 try
                 {
                     connection.Open();
-                    SqlCommand command = new SqlCommand(sql, connection);
                     command.ExecuteNonQuery();
                 }
                 catch (Exception ex) 
                 {
                     Console.WriteLine (ex.ToString());
                 }
-                finally
-                {
-                    connection.Close();
-                }
             }
         }
 
         public void ReadPerson(DataGrid grid)
         {
+            string sql = "SELECT * FROM Person";
             using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlCommand command = new SqlCommand(sql, connection))
             {
-                string sql = "SELECT * FROM Person";
+                
                 try
                 {
                     connection.Open();
-                    SqlCommand command = new SqlCommand(sql, connection);
-                    SqlDataAdapter adapter = new SqlDataAdapter(command);
-                    table = new DataTable(grid.Name);
-                    adapter.Fill(table);
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                    {
+                        table = new DataTable(grid.Name);
+                        adapter.Fill(table);
+                    }                   
                 }
                 catch (Exception ex)
                 {

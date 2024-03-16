@@ -61,9 +61,25 @@
                         <RadioButton Content="Cat Lover" Name="CatRadioBtn" GroupName="Lovers" Checked="AnimalLover"/>
                     </StackPanel>
                     <Label Content="What is your Occupation?" Margin="0,52,0,0" HorizontalAlignment="Left" Width="148" Height="31" VerticalAlignment="Top"/>
-                    <ComboBox x:Name="OccupationComboBox" Margin="10,83,0,0" HorizontalAlignment="Left" Width="147" Height="27" VerticalAlignment="Top" />
+                    <ComboBox x:Name="OccupationComboBox" Margin="10,83,0,0" HorizontalAlignment="Left" Width="147" Height="27" VerticalAlignment="Top">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <TextBlock Text="{Binding}"></TextBlock>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
                     <Label Content="What is a hobby you have?" Margin="0,115,0,0" HorizontalAlignment="Left" Width="157" Height="31" VerticalAlignment="Top"/>
-                    <ComboBox x:Name="HobbyComboBox" Margin="10,146,0,0" HorizontalAlignment="Left" Width="147" Height="27" VerticalAlignment="Top" />
+                    <ComboBox x:Name="HobbyComboBox" Margin="10,146,0,0" HorizontalAlignment="Left" Width="147" Height="27" VerticalAlignment="Top" >
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <TextBlock Text="{Binding}"></TextBlock>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
                 </Grid>
             </TabItem>
             <TabItem Header="Tab 3">
