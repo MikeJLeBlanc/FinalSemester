@@ -1,2 +1,4 @@
-package org.example.bytebank.servlet;public class LoginServlet {
+package org.example.bytebank.servlet;
+
+public class LoginServlet {
 }

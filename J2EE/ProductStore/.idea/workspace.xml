@@ -11,6 +11,40 @@
   <component name="ChangeListManager">
     <list default="true" id="d5625f05-9d81-41fe-b449-c0030e313fdb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/.idea/dataSources/d6d1c3db-a8c6-4964-8b6e-0f0102e31637.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/.idea/dataSources/d6d1c3db-a8c6-4964-8b6e-0f0102e31637/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/.idea/dataSources/d6d1c3db-a8c6-4964-8b6e-0f0102e31637/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/.idea/dataSources/d6d1c3db-a8c6-4964-8b6e-0f0102e31637/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/.idea/dataSources/d6d1c3db-a8c6-4964-8b6e-0f0102e31637/storage_v2/_src_/schema/scriptsavings.jrEh_g.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/src/main/java/org/example/scriptsavings/dao/CategoryDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/src/main/java/org/example/scriptsavings/dao/StatementDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/src/main/java/org/example/scriptsavings/dao/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/src/main/java/org/example/scriptsavings/model/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/src/main/java/org/example/scriptsavings/model/Statement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/src/main/java/org/example/scriptsavings/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/src/main/java/org/example/scriptsavings/servlet/AddExpense.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/src/main/java/org/example/scriptsavings/servlet/AddIncome.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/src/main/java/org/example/scriptsavings/servlet/LoginServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/src/main/java/org/example/scriptsavings/servlet/LogoutServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/src/main/java/org/example/scriptsavings/utility/SqlConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/src/main/webapp/common/footer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/src/main/webapp/common/head.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/src/main/webapp/common/nav.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScriptSavings/src/main/webapp/index.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +147,54 @@
       <predefined_log_file id="Tomcat Manager" />
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="54381" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -158,6 +240,7 @@
       <workItem from="1710324676572" duration="22152000" />
       <workItem from="1710535143183" duration="916000" />
       <workItem from="1710689154309" duration="6050000" />
+      <workItem from="1710756177779" duration="1898000" />
     </task>
     <servers />
   </component>

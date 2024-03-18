@@ -1,2 +1,4 @@
-package org.example.bytebank.model;public class Statement {
+package org.example.bytebank.model;
+
+public class Statement {
 }

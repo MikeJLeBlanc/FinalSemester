@@ -1,2 +1,4 @@
-package org.example.bytebank.dao;public class CategoryDao {
+package org.example.bytebank.dao;
+
+public class CategoryDao {
 }

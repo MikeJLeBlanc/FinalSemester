@@ -1,2 +1,4 @@
-package org.example.bytebank.model;public class Category {
+package org.example.bytebank.model;
+
+public class Category {
 }

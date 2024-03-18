@@ -1,4 +1,4 @@
-package org.example.scriptsavings.utility;
+package org.example.bytebank.utility;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
