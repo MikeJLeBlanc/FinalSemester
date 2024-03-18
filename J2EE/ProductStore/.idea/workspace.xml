@@ -157,6 +157,7 @@
       <workItem from="1710239575451" duration="9273000" />
       <workItem from="1710324676572" duration="22152000" />
       <workItem from="1710535143183" duration="916000" />
+      <workItem from="1710689154309" duration="6050000" />
     </task>
     <servers />
   </component>
@@ -178,5 +179,16 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/productstore/modal/User.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
