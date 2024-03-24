@@ -20,6 +20,7 @@ if __name__ == '__main__':
     list.append(3)
     list.append(4)
     list.append(5)
+    list.append(6)
     list.prepend(0)
     list.insert(3, 85)
 

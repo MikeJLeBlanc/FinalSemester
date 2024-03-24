@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class SqlConnection {
 
-    private static final String url = "jdbc:mysql://localhost:3306/scriptsavings";
+    private static final String url = "jdbc:mysql://localhost:3306/bytebank";
     private static final String uname = "root";
     private static final String pass = "";
     public static Connection getConnection() throws SQLException, ClassNotFoundException {

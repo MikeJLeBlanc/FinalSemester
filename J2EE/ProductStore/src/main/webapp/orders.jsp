@@ -4,17 +4,23 @@
 <%@page import="org.example.productstore.dao.ProductDao"%>
 <%@page import="org.example.productstore.modal.*"%>
 <%@page import="java.util.*"%>
+<%@ page import="java.sql.SQLException" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-	<%
+<%
 	DecimalFormat dcf = new DecimalFormat("#.##");
 	request.setAttribute("dcf", dcf);
 	User auth = (User) request.getSession().getAttribute("auth");
 	List<Order> orders = null;
 	if (auth != null) {
 	    request.setAttribute("person", auth);
-	    OrderDao orderDao  = new OrderDao(SqlConnection.getConnection());
-		orders = orderDao.userOrders(auth.getId());
+        OrderDao orderDao  = null;
+        try {
+            orderDao = new OrderDao(SqlConnection.getConnection());
+        } catch (SQLException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+        orders = orderDao.userOrders(auth.getId());
 	}else{
 		response.sendRedirect("login.jsp");
 	}

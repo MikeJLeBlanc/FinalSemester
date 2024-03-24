@@ -1,35 +1,39 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>	
 <!DOCTYPE html>
 <html>
 <head>
-    <%@include file="/common/head.jsp"%>
-    <title>ByteBank</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<%@include file="common/head.jsp"%>
+
+<title>Home | ByteBank</title>
+<style>
+body
+{
+    background-image: url('bg1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+}
+@media only screen and (max-width: 720px) {
+	body {
+		background-image: url('bg1.jpg');
+	}
+}
+</style>
 </head>
-<body class="bg-dark">
-<%@include file="/common/navbar.jsp"%>
-<div id="carouselExample" class="carousel slide">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="${pageContext.request.contextPath}/images/income.png" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="${pageContext.request.contextPath}/images/expense.png" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="${pageContext.request.contextPath}/images/loan.png" class="d-block w-100" alt="...">
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
-<footer>
-    <%@include file="/common/footer.jsp"%>
-</footer>
+<body>
+	<div class="site-mobile-menu">
+		<div class="site-mobile-menu-header">
+			<div class="site-mobile-menu-close mt-3">
+				<span class="icon-close2 js-menu-toggle"></span>
+			</div>
+		</div>
+		<div class="site-mobile-menu-body"></div>
+	</div>
+	<%@include file="common/header.jsp"%>
+	<%@include file="common/footer.jsp"%>
 </body>
+
 </html>
