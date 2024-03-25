@@ -32,7 +32,7 @@ class UniqueBidAuction:
         if len(self.bids) > 1 and self.bids[0] == self.bids[1]:
             self.rounds += 1
             if self.rounds <= 20:  # Maximum 20 rounds
-                self.current_min_bid = self.bids[1] + 1
+                self.current_min_bid = self.bids[1] + 1 # Set the new minimum bid to the tieing bid + 1
                 self.bids = []
                 for bidder_bids in self.bidder_bids.values():
                     if self.bids: 
